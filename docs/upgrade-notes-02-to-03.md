@@ -31,7 +31,7 @@ You can install this package (v0.3.2) directly on top of the previously existing
 
 1. When importing this package, use a merge mode of “Replace” rather than “Merge.” Merge is the default mode so you will have to change it when you import, or set this if you are importing through the API.
 
-![Merge mode: Replace](img/merge-mode-replace.png "Merge mode chosse Replace")
+![Merge mode: Replace](img/merge-mode-replace.png "Merge mode choose Replace")
 
 1. After you have imported this package, perform the following:
     1. Access the Data Administration App

@@ -1,18 +1,25 @@
 site_name: Support DHIS2 COVID-19 Packages
 site_url: https://www.dhis2.org/covid-19
+site_author: DHIS2
 repo_url: https://github.com/mrwine/dhis2-covid19-doc/
+
 nav:
-    - Home: 'README.md'
+    - 'Home': 'README.md'
     - 'Version notes':
-      - 'Release Notes': 'locale/release-notes-v03.md'
-      - 'Updgrade Notes': 'locale/upgrade-notes-02-to-03.md'
+      - 'Release Notes': 'release-notes-v03.md'
+      - 'Updgrade Notes': 'upgrade-notes-02-to-03.md'
     - 'Installation Guides':
-      - 'Installation Guide Tracker': 'locale/installation-guide-tracker.md'
-      - 'Installation Guide Event': 'locale/installation-guide-event.md'
-      - 'Installation Guide aggregate': 'locale/installation-guide-aggregate.md'
-theme:
-  name: readthedocs
-  highlightjs: true
-  hljs_languages:
-        - yaml
-        - rust
+      - 'Installation Guide Tracker': 'installation-guide-tracker.md'
+      - 'Installation Guide Event': 'installation-guide-event.md'
+      - 'Installation Guide aggregate': 'installation-guide-aggregate.md'
+
+theme: readthedocs
+#  name: null
+#  custom_dir: 'cinder'
+#  colorscheme: github
+#  highlightjs: true
+#  hljs_languages:
+#    - yaml
+#
+#markdown_extensions:
+#  - admonition
