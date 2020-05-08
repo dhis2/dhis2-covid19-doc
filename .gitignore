@@ -36,3 +36,9 @@ Temporary Items
 # mkdocs
 cinder/
 site/
+
+# Transifex
+.tx/
+
+# misc
+transifex.commands.md

@@ -1,0 +1,51 @@
+[main]
+host = https://www.transifex.com
+
+[covid19-support-material.index]
+file_filter = docs/<lang>/index.md
+minimum_perc = 0
+source_file = docs/en/index.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[covid19-support-material.system-design-doc-tracker-v03]
+file_filter = docs/<lang>/sdd-tracker-v03.md
+minimum_perc = 0
+source_file = docs/en/sdd-tracker-v03.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[covid19-support-material.installation-guide-aggregate]
+file_filter = docs/<lang>/installation-guide-aggregate.md
+minimum_perc = 0
+source_file = docs/en/installation-guide-aggregate.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[covid19-support-material.installation-guide-event]
+file_filter = docs/<lang>/installation-guide-event.md
+minimum_perc = 0
+source_file = docs/en/installation-guide-event.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[covid19-support-material.installation-guide-tracker]
+file_filter = docs/<lang>/installation-guide-tracker.md
+minimum_perc = 0
+source_file = docs/en/installation-guide-tracker.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[covid19-support-material.release-notes-v03]
+file_filter = docs/<lang>/release-notes-v03.md
+minimum_perc = 0
+source_file = docs/en/release-notes-v03.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[covid19-support-material.upgrade-notes-02-to-03]
+file_filter = docs/<lang>/upgrade-notes-02-to-03.md
+minimum_perc = 0
+source_file = docs/en/upgrade-notes-02-to-03.md
+source_lang = en
+type = GITHUBMARKDOWN
