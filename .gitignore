@@ -36,6 +36,3 @@ Temporary Items
 # mkdocs
 cinder/
 site/
-
-# Transifex
-.tx/
