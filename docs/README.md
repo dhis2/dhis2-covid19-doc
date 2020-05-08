@@ -2,9 +2,9 @@
 
 This repository is a temporary one to publish french translation of the material supporting the [DHIS2 COVID-19 DHSI2 packages](https://www.dhis2.org/covid-19)
 
-## Reading the french 
+## Reading the french
 
-You can read g Github Pages to publish the material supporting the DHIS2 COVID-19 DHSI2 packages
+Coming soon! You can read the french version of the DHIS2 COVID-19 DHSI2 packages support material on the Github Pages.
 
 ## Contributing to the translation
 
