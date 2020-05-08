@@ -1,25 +1,39 @@
-site_name: Support DHIS2 COVID-19 Packages
+site_name: DHIS2 COVID-19 Packages - Support material
 site_url: https://www.dhis2.org/covid-19
 site_author: DHIS2
+#site:description: Support material for DHIS2 COVID-19 Digital Packages
 repo_url: https://github.com/mrwine/dhis2-covid19-doc/
 
-nav:
-    - 'Home': 'README.md'
-    - 'Version notes':
-      - 'Release Notes': 'release-notes-v03.md'
-      - 'Updgrade Notes': 'upgrade-notes-02-to-03.md'
-    - 'Installation Guides':
-      - 'Installation Guide Tracker': 'installation-guide-tracker.md'
-      - 'Installation Guide Event': 'installation-guide-event.md'
-      - 'Installation Guide aggregate': 'installation-guide-aggregate.md'
+extra_css:
+  - "css/dhis2.css"
+  - "css/mkdocs_dhis2.css"
 
-theme: readthedocs
-#  name: null
-#  custom_dir: 'cinder'
-#  colorscheme: github
-#  highlightjs: true
-#  hljs_languages:
-#    - yaml
-#
-#markdown_extensions:
-#  - admonition
+nav:
+    - Accueil: README.md
+    - English:
+      - 'Version Notes':
+        - 'Release Notes': 'en/release-notes-v03.md'
+        - 'Upgrade Notes': 'en/upgrade-notes-02-to-03.md'
+      - 'Installation Guides':
+        - 'Installation Guide Tracker': 'en/installation-guide-tracker.md'
+        - 'Installation Guide Events': 'en/installation-guide-event.md'
+        - 'Installation Guide Aggregate': 'en/installation-guide-aggregate.md'
+    - Français:
+      - 'Notes':
+        - 'Notes de version': 'fr/release-notes-v03.md'
+        - 'Notes de mise à jour': 'fr/upgrade-notes-02-to-03.md'
+      - 'Guides d&apos;installation':
+        - 'Guide d&apos;installation pour Tracker': 'fr/installation-guide-tracker.md'
+        - 'Guide d&apos;installation pour Événements': 'fr/installation-guide-event.md'
+        - 'Guide d&apos;installation pour Agrégat': 'fr/installation-guide-aggregate.md'
+
+theme: #mkdocs
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: github
+  highlightjs: true
+  hljs_languages:
+    - yaml
+
+markdown_extensions:
+  - admonition

@@ -41,7 +41,7 @@ The following online resources are also available:
 *   The **[Frequently Asked Questions](https://community.dhis2.org/t/frequently-asked-questions-faq/38690)** document provides answers to common questions about the package.
 *   The **[COVID-19 Discussion and Support Channel](https://community.dhis2.org/c/implementation/covid-19/41)** on the DHIS2 Community of Practice is a forum where you can ask questions, get support for your implementation, and review issues that have been raised and resolved by other community members.
 
-<table style="margin-bottom:1em;">
+<table>
   <tr>
    <td>
 <strong>DHIS2 Version</strong>
