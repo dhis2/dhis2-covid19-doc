@@ -1,16 +1,3 @@
-language: python
-python:
-  - "2.7"
-# set os
-os: osx
-
-# command to install dependencies
-install:
-  - pip install -r requirements.txt
-# command to run tests
-script:
-  - pytest
-
 # Transifex
 sudo: required
 after_success:
