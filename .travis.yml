@@ -1,3 +1,5 @@
+os: osx
+
 # Transifex
 sudo: required
 after_success:
