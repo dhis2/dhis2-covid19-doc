@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="DHIS2">
+    <link rel="canonical" href="https://www.dhis2.org/covid-19/pt/installation-guide-aggregate/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>COVID-19 Aggregate Package Installation Guide - DHIS2 COVID-19 Packages - Support material</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../css/dhis2.css" rel="stylesheet">
+    <link href="../../css/mkdocs_dhis2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="../..">DHIS2 COVID-19 Packages - Support material</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Accueil</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Version Notes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../en/release-notes-v03/">Release Notes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/upgrade-notes-02-to-03/">Upgrade Notes</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Installation Guides</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../en/installation-guide-tracker/">Installation Guide Tracker</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/installation-guide-event/">Installation Guide Events</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/installation-guide-aggregate/">Installation Guide Aggregate</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Français <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Notes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../fr/release-notes-v03/">Notes de version</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../fr/upgrade-notes-02-to-03/">Notes de mise à jour</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Guides d&apos;installation</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../fr/installation-guide-tracker/">Guide d&apos;installation pour Tracker</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../fr/installation-guide-event/">Guide d&apos;installation pour Événements</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../fr/installation-guide-aggregate/">Guide d&apos;installation pour Agrégat</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/pt/installation-guide-aggregate.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#covid-19-aggregate-package-installation-guide">COVID-19 Aggregate Package Installation Guide</a></li>
+            <li class="second-level"><a href="#overview">Overview</a></li>
+                
+            <li class="second-level"><a href="#installation">Installation</a></li>
+                
+            <li class="second-level"><a href="#requirements">Requirements</a></li>
+                
+            <li class="second-level"><a href="#preparing-the-metadata-file">Preparing the metadata file</a></li>
+                
+            <li class="second-level"><a href="#default-data-dimension">Default data dimension</a></li>
+                
+            <li class="second-level"><a href="#indicator-types">Indicator types</a></li>
+                
+            <li class="second-level"><a href="#importing-a-metadata-file-into-dhis2">Importing a metadata file into DHIS2</a></li>
+                
+                <li class="third-level"><a href="#handling-import-conflicts">Handling import conflicts</a></li>
+            <li class="second-level"><a href="#additional-configuration">Additional Configuration</a></li>
+                
+            <li class="second-level"><a href="#required-configuration">Required configuration</a></li>
+                
+                <li class="third-level"><a href="#sharing">Sharing</a></li>
+                <li class="third-level"><a href="#duplicated-metadata">Duplicated metadata</a></li>
+            <li class="second-level"><a href="#examples-of-other-modifications">Examples of other modifications</a></li>
+                
+                <li class="third-level"><a href="#translations">Translations</a></li>
+                <li class="third-level"><a href="#adding-additional-variables">Adding additional variables</a></li>
+                <li class="third-level"><a href="#updating-layout-of-reporting-forms">Updating layout of reporting forms</a></li>
+            <li class="second-level"><a href="#maintenance">Maintenance</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="covid-19-aggregate-package-installation-guide">COVID-19 Aggregate Package Installation Guide</h1>
+<ul style="text-align: right">
+  <li style="list-style: none">Last updated 27/03/2020</li>
+  <li style="list-style: none">Package Version 0.3.2</li>
+  <li style="list-style: none">DHIS2 Version compatibility 2.30 - 2.33</li>
+  <li style="list-style: none">Demo: <a href="https://covid.dhis2.org/">https://covid.dhis2.org/</a></li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+<p>This document is intended to guide administrators through the process of installing the COVID-19 standard configuration package for DHIS2 for aggregate reporting. Good understanding of DHIS2 is required.</p>
+<p>The configuration packages for DHIS2 consists of a metadata file in <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format which can be imported into a DHIS2 instance, as well as accompanying documentation. The package provides pre-defined, standard content according to WHO recommendations. This document is concerned with complete packages that include configurations of data collection (data sets, data elements, validation rules) as well as analysis and dashboards (chart, map and pivot table favourites). This is intended for use where there is no data collection configured in DHIS2, or if replacing/revising existing content to align with WHO recommendations.</p>
+<p>The configuration packages consists of 4 main components:</p>
+<ul>
+<li>data sets with data elements;</li>
+<li>a set of indicators;</li>
+<li>analytical outputs (pivot table, data visualizer and GIS favourites); and</li>
+<li>a set of dashboards.</li>
+</ul>
+<p>These components are all linked, i.e. the indicators are based on the included data elements, the analytical outputs are based on the included indicators, and the dashboards are made up of the included analytical outputs.</p>
+<h2 id="installation">Installation</h2>
+<p>Installation of the module consists of two steps:</p>
+<ol>
+<li><a href="#preparing-the-metadata-file">Preparing</a> a metadata file with DHIS2 metadata.</li>
+<li><a href="#importing-a-metadata-file-into-dhis2">Importing</a> a metadata file into DHIS2.</li>
+<li><a href="#additional-configuration">Configuring</a> the imported metadata.</li>
+<li><a href="#examples-of-other-modifications">Performing</a> package-specific modifications.</li>
+</ol>
+<p>This section deals with the first two steps of preparing and importing the metadata file into DHIS2, whilst the configuration procedure is discussed in the next section. It is recommended to first read through both sections before starting the installation and configuration process in DHIS2. In addition to the general steps described here, some of the configuration packages have annexes to the installation guide, describing particular issues. These are listed in the appropriate section <a href="https://who.dhis2.org/documentation#configuration-packages">here</a>.</p>
+<p>The procedure outlined in this document should be tested in a test/staging environment before either being repeated or transferred to a production instance of DHIS2.</p>
+<p>Multiple configuration packages</p>
+<p>Some configuration packages have overlapping metadata, for example indicators. This means that in some situations, changes to metadata to configuration packages that have been imported previously may be overwritten when importing a different package. This can be avoided by importing "new only" metadata rather than "new and updates", but note that with either approach manual modifications will be needed. At a minimum, you must ensure that metadata used by multiple programmes are <a href="https://who.dhis2.org/documentation/access-and-sharing">shared</a> with the appropriate user groups for both programmes.</p>
+<h2 id="requirements">Requirements</h2>
+<p>In order to install the configuration package, an administrator user account in DHIS2 is required, with authorities to add/edit (public) metadata objects, including (but not limited to):</p>
+<ul>
+<li>data elements (including categories)</li>
+<li>data sets</li>
+<li>indicators</li>
+<li>indicator types</li>
+<li>dashboards</li>
+<li>data visualizer, pivot table and GIS favourites</li>
+</ul>
+<p>The full list of objects included in the module (for which the administrator needs authorities to manage) can be found in the Metadata reference document for the particular configuration package.</p>
+<p>In cases where modifications to the .json metadata file of the configuration package are necessary <a href="https://who.dhis2.org/documentation/installation_guide_complete.html#preparing-the_metadata-file">(see below)</a>, a <a href="https://en.wikipedia.org/wiki/Text_editor">text editor</a> is needed - these modifications should not be done with a word processor such as Microsoft Word.</p>
+<p>The configuration package can be installed in DHIS2 through the DHIS2 Health App, or manually through a .json file with DHIS2 metadata using the <a href="https://docs.dhis2.org/2.27/en/user/html/ch19.html">Import/Export</a> app of DHIS2. The procedure described in the rest of this section applies to the process of manually importing metadata.</p>
+<p>The <a href="https://who.dhis2.org/documentation/installation_guide_complete.html#configuration">Configuration</a> section applies for both methods.</p>
+<h2 id="preparing-the-metadata-file">Preparing the metadata file</h2>
+<p><strong>NOTE</strong>: If you are installing the package on a new instance of DHIS2, you can skip the “Preparing the metadata file” section and move immediately to the section on “<a href="#importing-a-metadata-file-into-DHIS2">Importing a metadata file into DHIS2</a>.”</p>
+<p>While not always necessary, it can often be advantageous to make certain modifications to the metadata file before importing it into DHIS2.</p>
+<h2 id="default-data-dimension">Default data dimension</h2>
+<p>In early versions of DHIS2, the UID of the default data dimension was auto-generated. Thus while all DHIS2 instances have a default category option, data element category, category combination and category option combination, the UIDs of these defaults can be different. Later versions of DHIS2 have hardcoded UIDs for the default dimension, and these UIDs are used in the configuration packages.</p>
+<p>To avoid conflicts when importing the metadata, it is advisable to search and replace the entire .json file for all occurrences of these default objects, replacing UIDs of the .json file with the UIDs of the database in which the file will be imported. Table 1 shows the UIDs which should be replaced, as well as the API endpoints to identify the existing UIDs.</p>
+<table style="margin-bottom:1em">
+  <tr>
+   <td>Object
+   </td>
+   <td>UID
+   </td>
+   <td>API endpoint
+   </td>
+  </tr>
+  <tr>
+   <td>Category
+   </td>
+   <td>GLevLNI9wkl
+   </td>
+   <td>../api/categories.json?filter=name:eq:default
+   </td>
+  </tr>
+  <tr>
+   <td>Category option
+   </td>
+   <td>xYerKDKCefk
+   </td>
+   <td>../api/categoryOptions.json?filter=name:eq:default
+   </td>
+  </tr>
+  <tr>
+   <td>Category combination
+   </td>
+   <td>bjDvmb4bfuf
+   </td>
+   <td>../api/categoryCombos.json?filter=name:eq:default
+   </td>
+  </tr>
+  <tr>
+   <td>Category option combination
+   </td>
+   <td>HllvX50cXC0
+   </td>
+   <td>../api/categoryOptionCombos.json?filter=name:eq:default
+   </td>
+  </tr>
+</table>
+
+<p>For example, if importing a configuration package into <a href="https://play.dhis2.org/demo">https://play.dhis2.org/demo</a>, the UID of the default category option combination could be identified through <a href="https://play.dhis2.org/demo/api/categoryOptionCombos.json?filter=name:eq:default">https://play.dhis2.org/demo/api/categoryOptionCombos.json?filter=name:eq:default</a> as <code>bRowv6yZOF2</code>. You could then search and replace all occurences of <code>HllvX50cXC0</code> with <code>bRowv6yZOF2</code> in the .json file. Note that this search and replace operation must be done with a plain text editor, not a word processor like Microsoft Word.</p>
+<h2 id="indicator-types">Indicator types</h2>
+<p>Indicator type is another type of object that can create import conflict because certain names are used in different DHIS2 databases (.e.g "Percentage"). Since Indicator types are defined simply by their factor and whether or not they are simple numers without denominator, they are unambiguous and can be replaced through a search and replace of the UIDs. This avoids potential import conflicts, and avoids creating duplicate indicator types. Table 2 shows the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs.</p>
+<table style="margin-bottom:1em">
+  <tr>
+   <td>Object
+   </td>
+   <td>UID
+   </td>
+   <td>API endpoint
+   </td>
+  </tr>
+  <tr>
+   <td>Numerator only (number)
+   </td>
+   <td>kHy61PbChXr
+   </td>
+   <td>../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1
+   </td>
+  </tr>
+  <tr>
+   <td>Percentage
+   </td>
+   <td>hmSnCXmLYwt
+   </td>
+   <td>../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:100
+   </td>
+  </tr>
+</table>
+
+<p><strong>Note 1</strong>: by replacing the UIDs as described and importing the .json file, the name (including any translations) of the indicator types in question will be updated to those included in the configuration packages.</p>
+<p><strong>Note 2</strong>: An alternative approach to re-using the existing indicator types is to import those included in the configuration package, and removing the existing ones that overlap. This would require all indicators that use these existing indicator types to be updated to the newly imported indicator types, before the indicator types can be deleted.</p>
+<h2 id="importing-a-metadata-file-into-dhis2">Importing a metadata file into DHIS2</h2>
+<p>The .json metadata file is imported through the <a href="https://docs.dhis2.org/2.28/en/user/html/import_export.html">Import/Export</a> app of DHIS2. It is advisable to use the "dry run" feature to identify issues before attempting to do an actual import the metadata. If "dry run" reports any issues or conflicts, see the <a href="https://who.dhis2.org/documentation/installation_guide_complete.html#handling-import-conflicts">import conflicts</a> section below.</p>
+<p>If the "dry run"/"validate" import works without error, attempt to import the metadata. If the import succeeds without any errors, you can proceed to <a href="https://who.dhis2.org/documentation/installation_guide_complete.html#configuration">configure</a> the module. In some cases, import conflicts or issues are not shown during the "dry run", but appears when the actual import is attempted. In this case, the import summary will list any errors that need to be resolved.</p>
+<h3 id="handling-import-conflicts">Handling import conflicts</h3>
+<p><strong>NOTE</strong> If you are importing into a new DHIS2 instance, you will not have to worry about import conflicts, as there is nothing in the database you are importing to to conflict with. Follow the instructions to import the metadata then please proceed to the “<a href="#additional-configuration">Additional configuration</a>” section.</p>
+<p>There are a number of different conflicts that may occur, though the most common is that there are metadata objects in the configuration package with a name, shortname and/or code that already exists in the target database. There are a couple of alternative solutions to these problems, with different advantages and disadvantages. Which one is more appropriate will depend, for example, on the type of object for which a conflict occurs.</p>
+<h4 id="alternative-1">Alternative 1</h4>
+<p>Rename the existing object for which there is a conflict. The advantage of this approach is that there is no need to modify the .json file, as changes is instead done through user interface of DHIS2. This is likely to be less error prone. It also means that the configuration package is left as is, which can be an advantage for example when training material and documentation based on the configuration package will be used.</p>
+<h4 id="alternative-2">Alternative 2</h4>
+<p>Rename the object for which there is a conflict in the .json file. The advantage of this approach is that the existing DHIS2 metadata is left as-is. This can be a factor when there is training material or documentation such as SOPs of data dictionaries linked to the object in question, and it does not involve any risk of confusing users by modifying the metadata they are familiar with. At the same time, modifying object of the .json file means that using the associated documentation and training material might become more complicated.</p>
+<p>Note that for both alternative 1 and 2, the modification can be as simple as adding a small pre/post-fix to the name, to minimise the risk of confusion.</p>
+<h4 id="alternative-3">Alternative 3</h4>
+<p>A third and more complicated approach is to modify the .json file to re-use existing metadata. For example, in cases where an indicator already exists for a certain concept (e.g. "ANC 1 coverage"), that indicator could be removed from the .json file and all references to its UID replaced with the corresponding indicator already in the database. The big advantage of this (which is not limited to the cases where there is a direct import conflict) is to avoid creating duplicate metadata in the database. However, it is generally not recommended for several reasons:</p>
+<ul>
+<li>it requires expert knowledge of the detail metadata structure of DHIS2</li>
+<li>the approach does not work for all types of objects. In particular, certain types of objects have dependencies which are complicated to solve in this way, for example related to disaggregations.</li>
+<li>as with alternative 2, it means that the result of the installation is not entirely according to the standard configuration, and training material and documentation developed for the configuration might not be usable without modifications.</li>
+<li>future updates to the configuration package will be complicated.</li>
+</ul>
+<h2 id="additional-configuration">Additional Configuration</h2>
+<p>Once all metadata has been successfully imported, the module should be useable with only a few minor additional adjustments. In addition, depending entirely on the DHIS2 instance the module has been imported into, some additional configuration and modification might be necessary or advantageous. This section will first go through the necessary configuration steps, then mention some of the other types of modifications or configuration that might be relevant.</p>
+<h2 id="required-configuration">Required configuration</h2>
+<p>Before the configuration packages can be used for data collection, there are two steps that are required.</p>
+<ul>
+<li>Assign the data set(s) to appropriate organisation units</li>
+<li>Share the data set(s) with appropriate user groups</li>
+<li>Add your user(s) to the appropriate user groups</li>
+</ul>
+<p>The data sets should be assigned to the organisation units (facilities) which are expected to report on that particular data set.</p>
+<p>The data sets and category options should also be shared with the relevant user group(s) of the personnel who are responsible for doing data entry for those data sets.</p>
+<h3 id="sharing">Sharing</h3>
+<p>First, you will have to use the <em>Sharing</em> functionality of DHIS2 to configure which users (user groups) should see the metadata and data associated with the programme as well as who can register/enter data into the program. Sharing should been configured for the following:</p>
+<ul>
+<li>Data elements/Data element groups</li>
+<li>Indicators/Indicator groups</li>
+<li>Data Sets</li>
+<li>Dashboards</li>
+</ul>
+<p>There are three user groups that come with the package:</p>
+<ul>
+<li>COVID19 access</li>
+<li>COVID19 admin</li>
+<li>COVID 19 data capture</li>
+</ul>
+<p>We recommend the following access</p>
+<table style="margin-bottom:1em">
+  <tr>
+   <td rowspan="2" ><strong>Object</strong>
+   </td>
+   <td colspan="3" ><strong>User Group</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><em>COVID19 access</em>
+   </td>
+   <td><em>COVID19 admin</em>
+   </td>
+   <td><em>COVID19 data capture</em>
+   </td>
+  </tr>
+  <tr>
+   <td><em>Data Elements/Data element group</em>
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can edit and view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+  </tr>
+  <tr>
+   <td><em>Indicators/Indicator group</em>
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can edit and view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+  </tr>
+  <tr>
+   <td><em>Data sets</em>
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can edit and view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can capture and view
+   </td>
+  </tr>
+  <tr>
+   <td><em>Dashboards</em>
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can edit and view
+<p>
+Data: can view
+   </td>
+   <td>Metadata : can view
+<p>
+Data: can view
+   </td>
+  </tr>
+</table>
+
+<h3 id="duplicated-metadata">Duplicated metadata</h3>
+<p>Even when metadata has been successfully imported without any import conflicts, there can be duplicates in the metadata - whether it's a chart, indicator, data element or data element category that already exists. As was noted in the section above on resolving conflict, an important issues to keep in mind is that decisions on making changes to the metadata in DHIS2 also needs to take into account other documents and resources that are in different ways associated with both the existing metadata, and the metadata that has been imported through the configuration package. Resolving duplicates is thus not only a matter of "cleaning up the database", but also making sure that this done without, for example, breaking potential integrating with other systems, the possibility to use training material, breaking SOPs etc. This will very much be context-dependent.</p>
+<p>One important thing to keep in mind is that DHIS2 has tools that can hide some of the complexities of potential duplications in metadata. For example, where duplicate data element categories exists these duplications can be hidden to end users through category option group sets, or certain metadata objects can be hidden for groups of users through sharing.</p>
+<p>It is recommended not to remove or replace the indicators included in configuration packages even though the same indicator already exists, so that the analytical outputs (which as based exclusively on indicators) can be kept. This will allow training material based on the configuration packages to be re-used.</p>
+<h2 id="examples-of-other-modifications">Examples of other modifications</h2>
+<p>In addition to the required configuration, there are a number of other modifications and configuration that might be relevant, depending on the specific situation. It will not be possible to provide guidance and recommendations that cover all the different scenarios, but a brief discussion of some common problems are presented here.</p>
+<h3 id="translations">Translations</h3>
+<p>Additional translations might have to be added, if other languages than those included are needed.</p>
+<h3 id="adding-additional-variables">Adding additional variables</h3>
+<p>The configuration packages includes key recommended data elements and indicators. However, it might in some cases be necessary to add additional variables to address country-specific information needs. These could be added to the included data sets.</p>
+<h3 id="updating-layout-of-reporting-forms">Updating layout of reporting forms</h3>
+<p>To facilitate the work of personnel doing data entry in DHIS2, it is sometimes desirable to add a custom data entry form that match the format of paper forms used at the primary level.</p>
+<h2 id="maintenance">Maintenance</h2>
+<p>No particular maintenance is required for the configuration packages, since they are made up of standard DHIS2 metadata objects. However, before upgrading to new versions of DHIS2, it is important to test all functionality of the system in general on a staging/test server before upgrading any production instances of the system.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

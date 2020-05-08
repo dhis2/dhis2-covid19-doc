@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="DHIS2">
+    <link rel="canonical" href="https://www.dhis2.org/covid-19/pt/upgrade-notes-02-to-03/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>COVID-19 Upgrade Notes - DHIS2 COVID-19 Packages - Support material</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../css/dhis2.css" rel="stylesheet">
+    <link href="../../css/mkdocs_dhis2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="../..">DHIS2 COVID-19 Packages - Support material</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Accueil</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Version Notes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../en/release-notes-v03/">Release Notes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/upgrade-notes-02-to-03/">Upgrade Notes</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Installation Guides</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../en/installation-guide-tracker/">Installation Guide Tracker</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/installation-guide-event/">Installation Guide Events</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/installation-guide-aggregate/">Installation Guide Aggregate</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Français <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Notes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../fr/release-notes-v03/">Notes de version</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../fr/upgrade-notes-02-to-03/">Notes de mise à jour</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Guides d&apos;installation</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../fr/installation-guide-tracker/">Guide d&apos;installation pour Tracker</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../fr/installation-guide-event/">Guide d&apos;installation pour Événements</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../fr/installation-guide-aggregate/">Guide d&apos;installation pour Agrégat</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/pt/upgrade-notes-02-to-03.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#covid-19-upgrade-notes">COVID-19 Upgrade Notes</a></li>
+            <li class="second-level"><a href="#case-based-surveillance-contact-tracing-package-surveillance-event-program">Case-Based Surveillance &amp; Contact Tracing Package, Surveillance Event Program</a></li>
+                
+            <li class="second-level"><a href="#aggregate-surveillance-reporting">Aggregate Surveillance Reporting</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="covid-19-upgrade-notes">COVID-19 Upgrade Notes</h1>
+<blockquote>
+<p><strong><em>NOTE</em></strong>: This document is only for those who are installing the new version (v0.3.x) of the indicated package over the previous version (v0.2/v0.1). Please see the full installation instructions if you are installing on a new instance.</p>
+<p>Full installation instructions:</p>
+<p><a href="https://docs.google.com/document/d/1iILgYYYDXDKpizkxY08syMfrw_9POzMMIMwd5Nb7yl4/edit?usp=sharing">Case based surveillance &amp; contact tracing</a></p>
+<p><a href="https://docs.google.com/document/d/1eY3n_oJlHoZroL_gXYRJoKwsFK4JSslnAk1DN-gBlxs/edit?usp=sharing">Surveillance Event Program</a></p>
+<p><a href="https://docs.google.com/document/d/1zQxrtc5qWf8L4pk8dzOXBbyKF0XZcBiwHMJ4rNhkrds/edit?usp=sharing">Aggregate Surveillance Reporting</a></p>
+</blockquote>
+<h2 id="case-based-surveillance-contact-tracing-package-surveillance-event-program">Case-Based Surveillance &amp; Contact Tracing Package, Surveillance Event Program</h2>
+<p>You can install these packages (v0.3.3/v.0.3.2) directly on top of the previously existing package. This should be done in a testing/development environment as always.</p>
+<ol>
+<li>Rename the current “percentage” indicator type (for example [delete] - Percentage)</li>
+<li>Import the new packages in the following order if installing multiple packages<ol>
+<li>Case based surveillance: + Contact Tracing Registration &amp; Follow-Up : v0.3.3 are included in one package</li>
+<li>Surveillance Event Program : v0.3.2</li>
+</ol>
+</li>
+<li>Delete the percentage indicator type that you have renamed</li>
+</ol>
+<p>If you are only installing one of the packages and not both, than you may import the single package after renaming the indicator than proceed to delete the previous indicator type after it has been imported.</p>
+<p>This is to take care of aligning the indicator ID types across the aggregate and tracker packages.</p>
+<h2 id="aggregate-surveillance-reporting">Aggregate Surveillance Reporting</h2>
+<p>You can install this package (v0.3.2) directly on top of the previously existing package (v0.1). This should be done in a testing/development environment as always.</p>
+<ol>
+<li>When importing this package, use a merge mode of “Replace” rather than “Merge.” Merge is the default mode so you will have to change it when you import, or set this if you are importing through the API.</li>
+</ol>
+<p><img alt="Merge mode: Replace" src="img/merge-mode-replace.png" title="Merge mode chosse Replace" /></p>
+<ol>
+<li>After you have imported this package, perform the following:<ol>
+<li>Access the Data Administration App</li>
+<li>Go to “Maintenance”</li>
+<li>Select “Clear application cache” and “Reload apps”</li>
+<li>Select “Perform maintenance”</li>
+</ol>
+</li>
+</ol></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

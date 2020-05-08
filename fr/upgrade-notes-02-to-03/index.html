@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="DHIS2">
+    <link rel="canonical" href="https://www.dhis2.org/covid-19/fr/upgrade-notes-02-to-03/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Notes de mise à jour - DHIS2 COVID-19 Packages - Support material</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../css/dhis2.css" rel="stylesheet">
+    <link href="../../css/mkdocs_dhis2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="../..">DHIS2 COVID-19 Packages - Support material</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Accueil</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Version Notes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../en/release-notes-v03/">Release Notes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/upgrade-notes-02-to-03/">Upgrade Notes</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Installation Guides</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../en/installation-guide-tracker/">Installation Guide Tracker</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/installation-guide-event/">Installation Guide Events</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../en/installation-guide-aggregate/">Installation Guide Aggregate</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Français <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Notes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../release-notes-v03/">Notes de version</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Notes de mise à jour</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Guides d&apos;installation</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../installation-guide-tracker/">Guide d&apos;installation pour Tracker</a>
+</li>
+
+        
+            
+<li >
+    <a href="../installation-guide-event/">Guide d&apos;installation pour Événements</a>
+</li>
+
+        
+            
+<li >
+    <a href="../installation-guide-aggregate/">Guide d&apos;installation pour Agrégat</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../release-notes-v03/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../installation-guide-tracker/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/fr/upgrade-notes-02-to-03.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#covid-19-notes-de-mise-a-jour">COVID-19 Notes de mise à jour</a></li>
+            <li class="second-level"><a href="#surveillance-basee-sur-des-cas-le-paquet-de-recherche-des-contacts-le-programme-des-evenements-de-surveillance">Surveillance basée sur des cas &amp; le Paquet de recherche des contacts, le Programme des événements de surveillance</a></li>
+                
+            <li class="second-level"><a href="#rapport-de-surveillance-globale">Rapport de surveillance globale</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="covid-19-notes-de-mise-a-jour">COVID-19 Notes de mise à jour</h1>
+<blockquote>
+<p><strong><em>N.B.</em></strong> : Ce document est uniquement destiné à ceux qui installent la nouvelle version (v0.3.x) du paquet indiqué par rapport à la version précédente (v0.2/v0.1). Veuillez consulter les instructions d'installation complètes si vous installez sur une nouvelle instance.</p>
+<p>Instructions d'installation complètes :</p>
+<p><a href="https://docs.google.com/document/d/1iILgYYYDXDKpizkxY08syMfrw_9POzMMIMwd5Nb7yl4/edit?usp=sharing">Surveillance basée sur des cas et Recherche de contacts</a></p>
+<p><a href="https://docs.google.com/document/d/1eY3n_oJlHoZroL_gXYRJoKwsFK4JSslnAk1DN-gBlxs/edit?usp=sharing">Programme de surveillance des événements</a></p>
+<p><a href="https://docs.google.com/document/d/1zQxrtc5qWf8L4pk8dzOXBbyKF0XZcBiwHMJ4rNhkrds/edit?usp=sharing">Rapports de surveillance agrégés</a></p>
+</blockquote>
+<h2 id="surveillance-basee-sur-des-cas-le-paquet-de-recherche-des-contacts-le-programme-des-evenements-de-surveillance">Surveillance basée sur des cas &amp; le Paquet de recherche des contacts, le Programme des événements de surveillance</h2>
+<p>Vous pouvez installer ces progiciels (v0.3.3/v.0.3.2) directement au dessus du paquet existant. Comme toujours, cela doit être fait dans un environnement de test et de développement.</p>
+<ol>
+<li>Renommer le type d'indicateur "pourcentage" actuel (par exemple [supprimer] - Pourcentage)</li>
+<li>Importez les nouveaux paquets dans l'ordre suivant si vous installez plusieurs paquets<ol>
+<li>Surveillance basée sur des cas : + Enregistrement et suivi de la recherche des contacts : v0.3.3 sont intégrés dans un seul paquet</li>
+<li>Programme de surveillance des événements : v0.3.2</li>
+</ol>
+</li>
+<li>Supprimez le type d'indicateur de pourcentage que vous avez renommé</li>
+</ol>
+<p>Si vous n'installez qu'un des paquets et non les deux, vous pouvez importer le paquet unique après avoir renommé l'indicateur, puis supprimer le type d'indicateur précédent après son importation.</p>
+<p>Il s'agit de veiller à l'alignement des types d'identification des indicateurs dans l'ensemble des agrégats et les ensembles de suivi.</p>
+<h2 id="rapport-de-surveillance-globale">Rapport de surveillance globale</h2>
+<p>Vous pouvez installer ce paquet (v0.3.2) directement au dessus du paquet existant (v0.1). Comme toujours, cela doit être fait dans un environnement de test et de développement.</p>
+<ol>
+<li>Lors de l'importation de ce paquet, utilisez le mode de fusion "Remplacer" plutôt que "Fusionner". Fusionner est le mode par défaut, vous devrez donc le changer lors de l'importation, ou le définir si vous importez via l'API.</li>
+</ol>
+<p><img alt="Mode de fusion : Remplacer" src="img/merge-mode-replace.png" title="Mode de fusion : Choisissez Remplacer" /></p>
+<ol>
+<li>Une fois que vous avez importé ce paquet, effectué les opérations suivantes :<ol>
+<li>Accès à l'application Administration des données</li>
+<li>Allez à "Maintenance"</li>
+<li>Sélectionnez "Effacer le cache des applications" et "Recharger les applications".</li>
+<li>Sélectionnez "Effectuer la maintenance"</li>
+</ol>
+</li>
+</ol></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
