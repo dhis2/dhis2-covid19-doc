@@ -38,7 +38,7 @@ cinder/
 site/
 
 # Transifex
-.tx/
+.tx
 
 # misc
 transifex-commands.md
