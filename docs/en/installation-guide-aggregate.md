@@ -70,7 +70,7 @@ In early versions of DHIS2, the UID of the default data dimension was auto-gener
 
 To avoid conflicts when importing the metadata, it is advisable to search and replace the entire .json file for all occurrences of these default objects, replacing UIDs of the .json file with the UIDs of the database in which the file will be imported. Table 1 shows the UIDs which should be replaced, as well as the API endpoints to identify the existing UIDs.
 
-<table style="margin-bottom:1em">
+<table>
   <tr>
    <td>Object
    </td>
@@ -119,7 +119,7 @@ For example, if importing a configuration package into [https://play.dhis2.org/d
 
 Indicator type is another type of object that can create import conflict because certain names are used in different DHIS2 databases (.e.g "Percentage"). Since Indicator types are defined simply by their factor and whether or not they are simple numers without denominator, they are unambiguous and can be replaced through a search and replace of the UIDs. This avoids potential import conflicts, and avoids creating duplicate indicator types. Table 2 shows the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs.
 
-<table style="margin-bottom:1em">
+<table>
   <tr>
    <td>Object
    </td>
@@ -214,7 +214,7 @@ There are three user groups that come with the package:
 
 We recommend the following access
 
-<table style="margin-bottom:1em">
+<table>
   <tr>
    <td rowspan="2" ><strong>Object</strong>
    </td>

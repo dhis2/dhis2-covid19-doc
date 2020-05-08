@@ -34,11 +34,7 @@ Temporary Items
 ### Project specific ###
 
 # mkdocs
-cinder/
 site/
-
-# Transifex
-.tx
 
 # misc
 transifex-commands.md
