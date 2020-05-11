@@ -1,8 +1,10 @@
 site_name: DHIS2 COVID-19 Packages - Support material
 site_url: https://www.dhis2.org/covid-19
-site_author: DHIS2
-#site:description: Support material for DHIS2 COVID-19 Digital Packages
+site_author: DHIS2 Team
+copyright: 2020 DHIS2 Team
+site_description: Support material for the DHIS2 COVID-19 Digital Packages
 repo_url: https://github.com/mrwine/dhis2-covid19-doc/
+edit_uri: blob/master/docs/
 
 extra_css:
   - "css/dhis2.css"
@@ -26,14 +28,7 @@ nav:
         - 'Guide d&apos;installation pour Événements': 'fr/installation-guide-event.md'
         - 'Guide d&apos;installation pour Agrégat': 'fr/installation-guide-aggregate.md'
 
-theme: 'windmill' #mkdocs
-  # name:
-  # custom_dir: 'cinder'
-  # colorscheme: github
-  # highlightjs: true
-  #hljs_languages:
-  #  - yaml
-  #  - rust
+theme: 'windmill'
 
 markdown_extensions:
   - admonition
