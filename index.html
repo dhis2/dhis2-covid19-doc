@@ -1,336 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="None">
     <meta name="author" content="DHIS2">
     <link rel="canonical" href="https://www.dhis2.org/covid-19/">
-    <link rel="shortcut icon" href="img/favicon.ico">
-
-    
-    <title>Accueil - DHIS2 COVID-19 Packages - Support material</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="css/base.min.css" rel="stylesheet">
-    <link href="css/cinder.min.css" rel="stylesheet">
-
-    
-        
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
-    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>DHIS2 COVID-19 Packages - Support material</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
     <link href="css/dhis2.css" rel="stylesheet">
-    <link href="css/mkdocs_dhis2.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
     
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Welcome! Bienvenue !", url: "#_top", children: [
+              {title: "COVID-19 Surveillance Digital Data Package", url: "#covid-19-surveillance-digital-data-package" },
+          ]},
+        ];
 
-     
+    </script>
+    <script src="./js/base.js"></script> 
 </head>
 
-<body class="homepage" >
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
             
-
-            <!-- Main title -->
-
-            <a class="navbar-brand" href=".">DHIS2 COVID-19 Packages - Support material</a>
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li class="active">
-                        <a href=".">Accueil</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Version Notes</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="en/release-notes-v03/">Release Notes</a>
-</li>
-
-        
-            
-<li >
-    <a href="en/upgrade-notes-02-to-03/">Upgrade Notes</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Installation Guides</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="en/installation-guide-tracker/">Installation Guide Tracker</a>
-</li>
-
-        
-            
-<li >
-    <a href="en/installation-guide-event/">Installation Guide Events</a>
-</li>
-
-        
-            
-<li >
-    <a href="en/installation-guide-aggregate/">Installation Guide Aggregate</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Français <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Notes</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="fr/release-notes-v03/">Notes de version</a>
-</li>
-
-        
-            
-<li >
-    <a href="fr/upgrade-notes-02-to-03/">Notes de mise à jour</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Guides d&apos;installation</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="fr/installation-guide-tracker/">Guide d&apos;installation pour Tracker</a>
-</li>
-
-        
-            
-<li >
-    <a href="fr/installation-guide-event/">Guide d&apos;installation pour Événements</a>
-</li>
-
-        
-            
-<li >
-    <a href="fr/installation-guide-aggregate/">Guide d&apos;installation pour Agrégat</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-                    <li class="disabled">
-                        <a rel="prev" >
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="en/release-notes-v03/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/README.md"><i class="fab fa-github"></i> Edit on GitHub</a>
-                    </li>
-            </ul>
-        </div>
+      </form>
     </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+        <img class="wm-top-logo" src="././img/dhis2-icon-rgb-positive.png"/>
+      
+      <div class="wm-top-title">
+        DHIS2 COVID-19 Packages - Support material<br>
+        
+          <span class="wm-top-version">v0.3</span>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/mrwine/dhis2-covid19-doc/">
+        <i class="fa fa-github"></i>
+
+        GitHub
+      </a>
+      </li>
+    </ul>
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Accueil</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">English</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Version Notes</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="en/release-notes-v03/" class="wm-article-link wm-toc-text">Release Notes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="en/upgrade-notes-02-to-03/" class="wm-article-link wm-toc-text">Upgrade Notes</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Installation Guides</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="en/installation-guide-tracker/" class="wm-article-link wm-toc-text">Installation Guide Tracker</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="en/installation-guide-event/" class="wm-article-link wm-toc-text">Installation Guide Events</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="en/installation-guide-aggregate/" class="wm-article-link wm-toc-text">Installation Guide Aggregate</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Français</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Notes</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="fr/release-notes-v03/" class="wm-article-link wm-toc-text">Notes de version</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="fr/upgrade-notes-02-to-03/" class="wm-article-link wm-toc-text">Notes de mise à jour</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Guides d&apos;installation</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="fr/installation-guide-tracker/" class="wm-article-link wm-toc-text">Guide d&apos;installation pour Tracker</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="fr/installation-guide-event/" class="wm-article-link wm-toc-text">Guide d&apos;installation pour Événements</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="fr/installation-guide-aggregate/" class="wm-article-link wm-toc-text">Guide d&apos;installation pour Agrégat</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="en/release-notes-v03/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="en/release-notes-v03/" class="btn btn-xs btn-link">
+        Release Notes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="welcome-bienvenue">Welcome! Bienvenue !</h1>
+<h2 id="covid-19-surveillance-digital-data-package">COVID-19 Surveillance Digital Data Package</h2>
+<blockquote>
+<p><a href="en/">I want to access the documentation in <strong>English</strong></a></p>
+</blockquote>
+<p>DHIS2 has released a digital data package to accelerate case detection, situation reporting, active surveillance and response for COVID-19. The package is inspired by the Ministry of Health Sri Lanka’s pioneering design of DHIS2 tracker for COVID-19 case detection and draws on years of collaboration with the World Health Organisation (WHO) to develop information system standards for case-based disease surveillance. The COVID-19 digital data package includes standard metadata aligned with the WHO’s <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">technical guidance on COVID-19 surveillance and case definitions</a> and implementation guidance to enable rapid deployment in countries.</p>
+<blockquote>
+<p><a href="en/">I want to access the documentation in <strong>English</strong></a></p>
+</blockquote>
+<p>Read more on our dedicated page: <a href="https://www.dhis2.org/covid-19">DHIS2 COVID-19 DHIS2 packages</a></p>
+<h3 id="modules-de-surveillance-covid-19">Modules de surveillance COVID-19</h3>
+<blockquote>
+<p><a href="fr/">Je veux accéder à la documentation en <strong>Français</strong></a></p>
+</blockquote>
+<p>DHIS2 a publié un module de données numériques pour accélérer la détection de cas, l'analyse de situation, la surveillance active et la riposte au COVID-19. Ce module s'inspire de la conception pionnière du Tracker DHIS2 par le ministère de la santé du Sri Lanka pour la détection des cas de COVID-19 et s'appuie sur des années de collaboration avec l'Organisation mondiale de la santé (OMS) pour développer des normes en matière de système d'information pour la surveillance des maladies basée sur l'identification des cas. Le module de données numérique de COVID-19 comprend des métadonnées standard alignées sur les <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">orientations techniques de l'OMS en matière de surveillance du COVID-19 et les définitions de cas</a> et des conseils de mise en œuvre pour permettre un déploiement rapide dans les pays.</p>
+<blockquote>
+<p><a href="fr/">Je veux accéder à la documentation en <strong>Français</strong></a></p>
+</blockquote>
+<p>Pour en savoir plus, aller sur la page dédiée aux <a href="https://www.dhis2.org/fr/covid-19">Modules de surveillance COVID-19</a></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="en/release-notes-v03/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="en/release-notes-v03/" class="btn btn-xs btn-link">
+        Release Notes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
 </div>
 
-    <div class="container">
-        
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#goal-of-this-repository">Goal of this repository</a></li>
-            <li class="second-level"><a href="#reading-the-french">Reading the french</a></li>
-                
-            <li class="second-level"><a href="#contributing-to-the-translation">Contributing to the translation</a></li>
-                
-    </ul>
-</div></div>
-        <div class="col-md-9" role="main">
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/README.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
 
-<h1 id="goal-of-this-repository">Goal of this repository</h1>
-<p>This repository is a temporary one to publish french translation of the material supporting the <a href="https://www.dhis2.org/covid-19">DHIS2 COVID-19 DHSI2 packages</a></p>
-<h2 id="reading-the-french">Reading the french</h2>
-<p>Coming soon! You can read the french version of the DHIS2 COVID-19 digital packages support material on the Github Pages.</p>
-<h2 id="contributing-to-the-translation">Contributing to the translation</h2>
-<p>Strings can be translated in the <a href="https://www.transifex.com/hisp-uio/covid19-support-material/dashboard/">COV: Covid-19 support material project on Transifex</a></p></div>
-        
-        
-    </div>
-
-    <footer class="col-md-12 text-center">
-        
-        <hr>
-        <p>
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
-
-        
-        
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap-3.0.3.min.js"></script>
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-    <script>var base_url = "."</script>
-    
-    <script src="js/base.js"></script>
-    <script src="search/main.js"></script>
-
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
-    </body>
-
+</body>
 </html>
-
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2020-05-08 23:14:05
+Build Date UTC : 2020-05-11 11:17:13
 -->

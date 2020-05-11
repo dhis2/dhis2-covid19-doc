@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,257 +10,99 @@
     <meta name="author" content="DHIS2">
     <link rel="canonical" href="https://www.dhis2.org/covid-19/fr/installation-guide-tracker/">
     <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Guide d&apos;installation pour Tracker - DHIS2 COVID-19 Packages - Support material</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
-    
-        
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
-    
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
     <link href="../../css/dhis2.css" rel="stylesheet">
-    <link href="../../css/mkdocs_dhis2.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
     
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "COVID-19 Guide d'installation des paquets Tracker", url: "#_top", children: [
+              {title: "Aper\u00e7u", url: "#apercu" },
+              {title: "Installation", url: "#installation" },
+              {title: "Conditions requises", url: "#conditions-requises" },
+              {title: "Pr\u00e9paration du fichier de m\u00e9tadonn\u00e9es", url: "#preparation-du-fichier-de-metadonnees" },
+              {title: "Importation de m\u00e9tadonn\u00e9es", url: "#importation-de-metadonnees" },
+              {title: "Configuration suppl\u00e9mentaire", url: "#configuration-supplementaire" },
+              {title: "Adapter le programme tracker", url: "#adapter-le-programme-tracker" },
+          ]},
+        ];
 
-     
+    </script>
+    <script src="../../js/base.js"></script> 
 </head>
 
 <body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
 
-            <!-- Main title -->
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
 
-            <a class="navbar-brand" href="../..">DHIS2 COVID-19 Packages - Support material</a>
-        </div>
+    
+    
+      
+    
 
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../..">Accueil</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Version Notes</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../en/release-notes-v03/">Release Notes</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../en/upgrade-notes-02-to-03/">Upgrade Notes</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Installation Guides</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../en/installation-guide-tracker/">Installation Guide Tracker</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../en/installation-guide-event/">Installation Guide Events</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../en/installation-guide-aggregate/">Installation Guide Aggregate</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Français <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Notes</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../release-notes-v03/">Notes de version</a>
-</li>
-
-        
-            
-<li >
-    <a href="../upgrade-notes-02-to-03/">Notes de mise à jour</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Guides d&apos;installation</a>
-    <ul class="dropdown-menu">
-        
-            
-<li class="active">
-    <a href="./">Guide d&apos;installation pour Tracker</a>
-</li>
-
-        
-            
-<li >
-    <a href="../installation-guide-event/">Guide d&apos;installation pour Événements</a>
-</li>
-
-        
-            
-<li >
-    <a href="../installation-guide-aggregate/">Guide d&apos;installation pour Agrégat</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../upgrade-notes-02-to-03/">
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="../installation-guide-event/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/fr/installation-guide-tracker.md"><i class="fab fa-github"></i> Edit on GitHub</a>
-                    </li>
-            </ul>
-        </div>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../installation-guide-event/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../installation-guide-event/" class="btn btn-xs btn-link">
+        Guide d&apos;installation pour Événements
+      </a>
     </div>
-</div>
+    
+    <div class="wm-article-nav">
+      <a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-link">
+        Notes de mise à jour
+      </a>
+    </div>
+    
+  </div>
 
-    <div class="container">
-        
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#covid-19-guide-dinstallation-des-modules-tracker">COVID-19 Guide d'installation des modules Tracker</a></li>
-            <li class="second-level"><a href="#apercu">Aperçu</a></li>
-                
-            <li class="second-level"><a href="#installation">Installation</a></li>
-                
-            <li class="second-level"><a href="#conditions-requises">Conditions requises</a></li>
-                
-            <li class="second-level"><a href="#preparation-du-fichier-de-metadonnees">Préparation du fichier de métadonnées</a></li>
-                
-                <li class="third-level"><a href="#dimension-de-donnees-par-defaut">Dimension de données par défaut</a></li>
-                <li class="third-level"><a href="#types-dindicateurs">Types d'indicateurs</a></li>
-            <li class="second-level"><a href="#importation-de-metadonnees">Importation de métadonnées</a></li>
-                
-                <li class="third-level"><a href="#gestion-des-conflits-dimportation">Gestion des conflits d'importation</a></li>
-            <li class="second-level"><a href="#configuration-supplementaire">Configuration supplémentaire</a></li>
-                
-                <li class="third-level"><a href="#partage">Partage</a></li>
-                <li class="third-level"><a href="#roles-des-utilisateurs">Rôles des utilisateurs</a></li>
-                <li class="third-level"><a href="#unites-dorganisation">Unités d'organisation</a></li>
-                <li class="third-level"><a href="#metadonnees-dupliquees">Métadonnées dupliquées</a></li>
-            <li class="second-level"><a href="#adapter-le-programme-tracker">Adapter le programme tracker</a></li>
-                
-    </ul>
-</div></div>
-        <div class="col-md-9" role="main">
+    
 
-<h1 id="covid-19-guide-dinstallation-des-modules-tracker">COVID-19 Guide d'installation des modules Tracker</h1>
+    <h1 id="covid-19-guide-dinstallation-des-paquets-tracker">COVID-19 Guide d'installation des paquets Tracker</h1>
 <ul style="text-align: right">
   <li style="list-style: none">Dernière mise à jour 27/03/2020</li>
-  <listyle="list-style: none">Version du module 0.3.3</li>
+  <listyle="list-style: none">Version du paquet 0.3.3</li>
   <li style="list-style: none">Compatibilité de la version DHIS2 2.33.2 et plus</li>
   <li style="list-style: none""> Démo: <a href="https://covid.dhis2.org/">https://covid.dhis2.org/</a></li>
 </ul>
 
 <h2 id="apercu">Aperçu</h2>
-<p>Le module d'événements COVID-19 a été développé en utilisant le DHIS2.33.2. L'objectif est de prendre en charge certaines des dernières fonctionnalités de DHIS2. Pour pouvoir utiliser le module, il est recommandé de l'installer dans une instance de DHIS2 utilisant DHIS2 2.33.2 ou supérieur. Si vous souhaitez l'installer sur une nouvelle instance, veuillez consulter le [guide d'installation de DHIS2] (https://docs.dhis2.org/master/en/dhis2_system_administration_guide/installation.html). Le présent document couvre l'aspect relatif à l'installation des modules suivants :</p>
+<p>Le paquet d'événements COVID-19 a été développé en utilisant le DHIS2.33.2. L'objectif est de prendre en charge certaines des dernières fonctionnalités de DHIS2. Pour pouvoir utiliser le paquet, il est recommandé de l'installer dans une instance de DHIS2 utilisant DHIS2 2.33.2 ou supérieur. Si vous souhaitez l'installer sur une nouvelle instance, veuillez consulter le [guide d'installation de DHIS2] (https://docs.dhis2.org/master/en/dhis2_system_administration_guide/installation.html). Le présent document couvre l'aspect relatif à l'installation des paquets suivants :</p>
 <ol>
 <li>COVID-19 Programme Tracker de surveillance basée sur les cas &amp; COVID-19 Programme d'enregistrement et de suivi des contacts</li>
 <li>Programme Tracker de dépistage aux points d'entrée</li>
 </ol>
-<p>Vous devrez suivre les instructions dans leur intégralité pour chaque module que vous installez.</p>
+<p>Vous devrez suivre les instructions dans leur intégralité pour chaque paquet que vous installez.</p>
 <h2 id="installation">Installation</h2>
 <p>L'installation du module se fait en plusieurs étapes :</p>
 <ol>
@@ -273,10 +116,10 @@
 <p>Pour installer le module, il faut nécessairement un compte d'utilisateur administrateur sur DHIS2. La procédure décrite dans le présent document doit être testée dans un environnement de test et de simulation avant d'être exécutée sur une instance de production du DHIS2.</p>
 <p>Il convient de veiller à ce que le serveur lui-même et l'application DHIS2 soient bien sécurisés, afin de limiter l'accès aux données collectées. Les détails relatifs à la sécurisation d'un système DHIS2 ne sont pas abordés dans le présent document, et nous renvoyons donc à la [documentation DHIS2] (http://dhis2.org/documentation).</p>
 <h2 id="preparation-du-fichier-de-metadonnees">Préparation du fichier de métadonnées</h2>
-<p><strong>N.B.</strong> : Si vous installez le module sur une nouvelle instance DHIS2, vous pouvez alors ignorer la section "Préparation du fichier de métadonnées" et passer immédiatement à la section "<a href="#importing-a-metadata-file-into-dhis2">Importer un fichier de métadonnées dans DHIS2</a>".</p>
+<p><strong>N.B.</strong> : Si vous installez le paquet sur une nouvelle instance DHIS2, vous pouvez alors ignorer la section "Préparation du fichier de métadonnées" et passer immédiatement à la section "<a href="#importing-a-metadata-file-into-dhis2">Importer un fichier de métadonnées dans DHIS2</a>".</p>
 <p>Bien que ce ne soit pas toujours nécessaire, il peut souvent être avantageux d'apporter certaines modifications au fichier de métadonnées avant son importation dans DHIS2.</p>
 <h3 id="dimension-de-donnees-par-defaut">Dimension de données par défaut</h3>
-<p>Dans les premières versions du DHIS2, l'UID de la dimension des données par défaut était généré automatiquement. Ainsi, alors que toutes les instances du DHIS2 ont une option de catégorie par défaut, une catégorie d'élément de données, une combinaison de catégories et une combinaison d'options de catégories, les UID de ces valeurs par défaut peuvent être différents. Les versions ultérieures du DHIS2 ont des UID codés en dur pour la dimension par défaut, et ces UID sont utilisés dans les modules de configuration.</p>
+<p>Dans les premières versions du DHIS2, l'UID de la dimension des données par défaut était généré automatiquement. Ainsi, alors que toutes les instances du DHIS2 ont une option de catégorie par défaut, une catégorie d'élément de données, une combinaison de catégories et une combinaison d'options de catégories, les UID de ces valeurs par défaut peuvent être différents. Les versions ultérieures du DHIS2 ont des UID codés en dur pour la dimension par défaut, et ces UID sont utilisés dans les paquets de configuration.</p>
 <p>Pour éviter les conflits lors de l'importation des métadonnées, il est conseillé de rechercher et de remplacer l'ensemble du fichier .json pour toutes les occurrences de ces objets par défaut, en remplaçant les UID du fichier .json par les UID de la base de données dans laquelle le fichier sera importé. Le tableau 1 indique les UID qui doivent être remplacés, ainsi que les point d'extrémité de l'API pour l'identification des UID existants.</p>
 <table style="margin-bottom:1em">
   <tr>
@@ -369,7 +212,7 @@
 <p>Le fichier de métadonnées .json est importé via l'application <a href="https://docs.dhis2.org/master/en/user/html/import_export.html">Import/Export</a> de DHIS2. Il est conseillé d'utiliser la fonction "test" pour identifier les problèmes avant d'essayer d'effectuer une importation réelle des métadonnées. Si la fonction "test" signale des problèmes ou des conflits, consultez la section [importer des conflits] (https://who.dhis2.org/documentation/installation_guide_complete.html#handling-import-conflicts) ci-dessous. Si l'importation "d'essai"/"de validation fonctionne sans erreur, essayez alors d'importer les métadonnées. Si l'importation réussit sans aucune erreur, vous pouvez alors passer à la <a href="https://who.dhis2.org/documentation/installation_guide_complete.html#configuration">configuration</a> du module. Dans certains cas, les conflits ou les problèmes d'importation ne sont pas affichés pendant le "test", mais apparaissent lorsque l'on tente l'importation proprement dite. Dans ce cas, le résumé de l'importation énumère les erreurs à résoudre.</p>
 <h3 id="gestion-des-conflits-dimportation">Gestion des conflits d'importation</h3>
 <p><strong><em>N.B.</em></strong> : Si vous importez dans une nouvelle instance DHIS2, vous n'aurez pas à vous soucier des conflits d'importation, car il n'y a rien dans la base de données que vous importez qui puisse entrer en conflit avec celle-ci. Suivez les instructions pour importer les métadonnées, puis passez à la section "<a href="#configuration-supplémentaire">Configuration supplémentaire</a>".</p>
-<p>Plusieurs de conflits peuvent survenir, mais le plus courant est le fait qu'il y ait des objets de métadonnées dans le module de configuration avec un nom, un nom abrégé et/ou un code qui existe déjà dans la base de données cible. Il existe plusieurs solutions alternatives à ces problèmes, avec de différents avantages et inconvénients. La solution la plus appropriée dépendra, par exemple, du type d'objet pour lequel un conflit survient.</p>
+<p>Plusieurs de conflits peuvent survenir, mais le plus courant est le fait qu'il y ait des objets de métadonnées dans le paquet de configuration avec un nom, un nom abrégé et/ou un code qui existe déjà dans la base de données cible. Il existe plusieurs solutions alternatives à ces problèmes, avec de différents avantages et inconvénients. La solution la plus appropriée dépendra, par exemple, du type d'objet pour lequel un conflit survient.</p>
 <h4 id="option-1">Option 1</h4>
 <p>Renommez l'objet de votre base de données de DHIS2 pour lequel il y a un conflit. L'avantage de cette approche est que vous n'avez pas besoin de modifier le fichier .json, puisque les modifications sont effectuées par l'interface utilisateur de DHIS2. Cette méthode est probablement moins sujette aux erreurs. Cela signifie également que le progiciel de configuration est laissé tel quel, ce qui peut être un avantage, par exemple, lorsque du matériel de formation et de la documentation basés sur le progiciel de configuration seront utilisés.</p>
 <h4 id="option-2">Option 2</h4>
@@ -380,7 +223,7 @@
 <ul>
 <li>il nécessite une connaissance approfondie de la structure détaillée des métadonnées du DHIS2</li>
 <li>Cette approche ne fonctionne pas pour tous les types d'objets. En particulier, certains types d'objets ont des dépendances compliquées à résoudre de cette manière, par exemple en ce qui concerne les désagrégations.</li>
-<li>Il sera compliqué d'éffectuer des mises à jour du module de configuration dans le futur.</li>
+<li>Il sera compliqué d'éffectuer des mises à jour du paquet de configuration dans le futur.</li>
 </ul>
 <h2 id="configuration-supplementaire">Configuration supplémentaire</h2>
 <p>Une fois que toutes les métadonnées sont importées avec succès, des étapes doivent être mises en oeuvre avant que le module ne soit fonctionnel.</p>
@@ -392,7 +235,7 @@
 <li>Étapes du programme</li>
 <li>Tableaux de bord</li>
 </ul>
-<p>Il y a trois groupes d'utilisateurs qui sont fournis avec le module :</p>
+<p>Il y a trois groupes d'utilisateurs qui sont fournis avec le paquet :</p>
 <ul>
 <li>COVID19 Accès</li>
 <li>COVID19 Administrateur</li>
@@ -480,7 +323,7 @@ Données : peut visualiser
   </tr>
 </table>
 
-<p>Vous voudrez bien affecter vos utilisateurs au groupe d'utilisateurs approprié en fonction de leur rôle dans le système. Vous pouvez également activer le partage pour d'autres objets du module en fonction de votre configuration. Reportez-vous à la [Documentation DHIS2] (https://docs.dhis2.org/master/en/dhis2_user_manual_en/about-sharing-of-objects.html) pour plus d'informations sur la configuration du partage.</p>
+<p>Vous voudrez bien affecter vos utilisateurs au groupe d'utilisateurs approprié en fonction de leur rôle dans le système. Vous pouvez également activer le partage pour d'autres objets du paquet en fonction de votre configuration. Reportez-vous à la [Documentation DHIS2] (https://docs.dhis2.org/master/en/dhis2_user_manual_en/about-sharing-of-objects.html) pour plus d'informations sur la configuration du partage.</p>
 <h3 id="roles-des-utilisateurs">Rôles des utilisateurs</h3>
 <p>Les utilisateurs auront besoin de rôles d'utilisateur pour pouvoir utiliser les différentes applications du DHIS2. Les rôles minimums suivants sont recommandés :</p>
 <ol>
@@ -502,99 +345,48 @@ Données : peut visualiser
 <li>Ajouter des traductions aux variables et/ou au formulaire de saisie des données.</li>
 <li>Modifier les indicateurs du programme en fonction des définitions de cas locales</li>
 </ul>
-<p>Toutefois, il est fortement recommandé de faire preuve d'une grande prudence si vous décidez de modifier ou de supprimer l'un des formulaires/métadonnées inclus. Il y a donc un risque que des modifications brisent des fonctionnalités, par exemple les règles du programme et les indicateurs du programme.</p></div>
-        
-        
-    </div>
+<p>Toutefois, il est fortement recommandé de faire preuve d'une grande prudence si vous décidez de modifier ou de supprimer l'un des formulaires/métadonnées inclus. Il y a donc un risque que des modifications brisent des fonctionnalités, par exemple les règles du programme et les indicateurs du programme.</p>
 
-    <footer class="col-md-12 text-center">
-        
-        <hr>
-        <p>
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
+  <br>
+    
 
-        
-        
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
     
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
     
-    <script>var base_url = "../.."</script>
+      
     
-    <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../installation-guide-event/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../installation-guide-event/" class="btn btn-xs btn-link">
+        Guide d&apos;installation pour Événements
+      </a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    
+    <div class="wm-article-nav">
+      <a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-link">
+        Notes de mise à jour
+      </a>
     </div>
+    
+  </div>
+
+    <br>
 </div>
-    </body>
 
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/mrwine/dhis2-covid19-doc/edit/master/docs/fr/installation-guide-tracker.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>
