@@ -4,12 +4,11 @@
 >
 > Full installation instructions:
 >
-> [Case based surveillance & contact tracing](https://docs.google.com/document/d/1iILgYYYDXDKpizkxY08syMfrw_9POzMMIMwd5Nb7yl4/edit?usp=sharing)
+> [Case based surveillance & contact tracing](installation-guide-tracker.md)
 >
->[Surveillance Event Program](https://docs.google.com/document/d/1eY3n_oJlHoZroL_gXYRJoKwsFK4JSslnAk1DN-gBlxs/edit?usp=sharing)
+>[Surveillance Event Program](installation-guide-event.md)
 >
-> [Aggregate Surveillance Reporting](https://docs.google.com/document/d/1zQxrtc5qWf8L4pk8dzOXBbyKF0XZcBiwHMJ4rNhkrds/edit?usp=sharing)
-
+> [Aggregate Surveillance Reporting](installation-guide-aggregate.md)
 
 ## Case-Based Surveillance & Contact Tracing Package, Surveillance Event Program
 
