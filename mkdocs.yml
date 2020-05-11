@@ -6,7 +6,6 @@ repo_url: https://github.com/mrwine/dhis2-covid19-doc/
 
 extra_css:
   - "css/dhis2.css"
-  - "css/mkdocs_dhis2.css"
 
 nav:
     - Accueil: README.md
@@ -27,13 +26,18 @@ nav:
         - 'Guide d&apos;installation pour Événements': 'fr/installation-guide-event.md'
         - 'Guide d&apos;installation pour Agrégat': 'fr/installation-guide-aggregate.md'
 
-theme: #mkdocs
-  name: null
-  custom_dir: 'cinder'
-  colorscheme: github
-  highlightjs: true
-  hljs_languages:
-    - yaml
+theme: 'windmill' #mkdocs
+  # name:
+  # custom_dir: 'cinder'
+  # colorscheme: github
+  # highlightjs: true
+  #hljs_languages:
+  #  - yaml
+  #  - rust
 
 markdown_extensions:
   - admonition
+
+extra:
+  version: v0.3
+  logo: ./img/dhis2-icon-rgb-positive.png
