@@ -33,7 +33,7 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "COVID-19 Guide d'installation des paquets Tracker", url: "#_top", children: [
+          {title: "COVID-19 Guide d'installation des modules Tracker", url: "#_top", children: [
               {title: "Aper\u00e7u", url: "#apercu" },
               {title: "Installation", url: "#installation" },
               {title: "Conditions requises", url: "#conditions-requises" },
@@ -88,21 +88,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="covid-19-guide-dinstallation-des-paquets-tracker">COVID-19 Guide d'installation des paquets Tracker</h1>
+    <h1 id="covid-19-guide-dinstallation-des-modules-tracker">COVID-19 Guide d'installation des modules Tracker</h1>
 <ul style="text-align: right">
   <li style="list-style: none">Dernière mise à jour 27/03/2020</li>
-  <listyle="list-style: none">Version du paquet 0.3.3</li>
+  <listyle="list-style: none">Version du module 0.3.3</li>
   <li style="list-style: none">Compatibilité de la version DHIS2 2.33.2 et plus</li>
   <li style="list-style: none""> Démo: <a href="https://covid.dhis2.org/">https://covid.dhis2.org/</a></li>
 </ul>
 
 <h2 id="apercu">Aperçu</h2>
-<p>Le paquet d'événements COVID-19 a été développé en utilisant le DHIS2.33.2. L'objectif est de prendre en charge certaines des dernières fonctionnalités de DHIS2. Pour pouvoir utiliser le paquet, il est recommandé de l'installer dans une instance de DHIS2 utilisant DHIS2 2.33.2 ou supérieur. Si vous souhaitez l'installer sur une nouvelle instance, veuillez consulter le [guide d'installation de DHIS2] (https://docs.dhis2.org/master/en/dhis2_system_administration_guide/installation.html). Le présent document couvre l'aspect relatif à l'installation des paquets suivants :</p>
+<p>Le module d'événements COVID-19 a été développé en utilisant le DHIS2.33.2. L'objectif est de prendre en charge certaines des dernières fonctionnalités de DHIS2. Pour pouvoir utiliser le module, il est recommandé de l'installer dans une instance de DHIS2 utilisant DHIS2 2.33.2 ou supérieur. Si vous souhaitez l'installer sur une nouvelle instance, veuillez consulter le [guide d'installation de DHIS2] (https://docs.dhis2.org/master/en/dhis2_system_administration_guide/installation.html). Le présent document couvre l'aspect relatif à l'installation des modules suivants :</p>
 <ol>
 <li>COVID-19 Programme Tracker de surveillance basée sur les cas &amp; COVID-19 Programme d'enregistrement et de suivi des contacts</li>
 <li>Programme Tracker de dépistage aux points d'entrée</li>
 </ol>
-<p>Vous devrez suivre les instructions dans leur intégralité pour chaque paquet que vous installez.</p>
+<p>Vous devrez suivre les instructions dans leur intégralité pour chaque module que vous installez.</p>
 <h2 id="installation">Installation</h2>
 <p>L'installation du module se fait en plusieurs étapes :</p>
 <ol>
@@ -116,10 +116,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Pour installer le module, il faut nécessairement un compte d'utilisateur administrateur sur DHIS2. La procédure décrite dans le présent document doit être testée dans un environnement de test et de simulation avant d'être exécutée sur une instance de production du DHIS2.</p>
 <p>Il convient de veiller à ce que le serveur lui-même et l'application DHIS2 soient bien sécurisés, afin de limiter l'accès aux données collectées. Les détails relatifs à la sécurisation d'un système DHIS2 ne sont pas abordés dans le présent document, et nous renvoyons donc à la [documentation DHIS2] (http://dhis2.org/documentation).</p>
 <h2 id="preparation-du-fichier-de-metadonnees">Préparation du fichier de métadonnées</h2>
-<p><strong>N.B.</strong> : Si vous installez le paquet sur une nouvelle instance DHIS2, vous pouvez alors ignorer la section "Préparation du fichier de métadonnées" et passer immédiatement à la section "<a href="#importing-a-metadata-file-into-dhis2">Importer un fichier de métadonnées dans DHIS2</a>".</p>
+<p><strong>N.B.</strong> : Si vous installez le module sur une nouvelle instance DHIS2, vous pouvez alors ignorer la section "Préparation du fichier de métadonnées" et passer immédiatement à la section "<a href="#importing-a-metadata-file-into-dhis2">Importer un fichier de métadonnées dans DHIS2</a>".</p>
 <p>Bien que ce ne soit pas toujours nécessaire, il peut souvent être avantageux d'apporter certaines modifications au fichier de métadonnées avant son importation dans DHIS2.</p>
 <h3 id="dimension-de-donnees-par-defaut">Dimension de données par défaut</h3>
-<p>Dans les premières versions du DHIS2, l'UID de la dimension des données par défaut était généré automatiquement. Ainsi, alors que toutes les instances du DHIS2 ont une option de catégorie par défaut, une catégorie d'élément de données, une combinaison de catégories et une combinaison d'options de catégories, les UID de ces valeurs par défaut peuvent être différents. Les versions ultérieures du DHIS2 ont des UID codés en dur pour la dimension par défaut, et ces UID sont utilisés dans les paquets de configuration.</p>
+<p>Dans les premières versions du DHIS2, l'UID de la dimension des données par défaut était généré automatiquement. Ainsi, alors que toutes les instances du DHIS2 ont une option de catégorie par défaut, une catégorie d'élément de données, une combinaison de catégories et une combinaison d'options de catégories, les UID de ces valeurs par défaut peuvent être différents. Les versions ultérieures du DHIS2 ont des UID codés en dur pour la dimension par défaut, et ces UID sont utilisés dans les modules de configuration.</p>
 <p>Pour éviter les conflits lors de l'importation des métadonnées, il est conseillé de rechercher et de remplacer l'ensemble du fichier .json pour toutes les occurrences de ces objets par défaut, en remplaçant les UID du fichier .json par les UID de la base de données dans laquelle le fichier sera importé. Le tableau 1 indique les UID qui doivent être remplacés, ainsi que les point d'extrémité de l'API pour l'identification des UID existants.</p>
 <table style="margin-bottom:1em">
   <tr>
@@ -212,7 +212,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Le fichier de métadonnées .json est importé via l'application <a href="https://docs.dhis2.org/master/en/user/html/import_export.html">Import/Export</a> de DHIS2. Il est conseillé d'utiliser la fonction "test" pour identifier les problèmes avant d'essayer d'effectuer une importation réelle des métadonnées. Si la fonction "test" signale des problèmes ou des conflits, consultez la section [importer des conflits] (https://who.dhis2.org/documentation/installation_guide_complete.html#handling-import-conflicts) ci-dessous. Si l'importation "d'essai"/"de validation fonctionne sans erreur, essayez alors d'importer les métadonnées. Si l'importation réussit sans aucune erreur, vous pouvez alors passer à la <a href="https://who.dhis2.org/documentation/installation_guide_complete.html#configuration">configuration</a> du module. Dans certains cas, les conflits ou les problèmes d'importation ne sont pas affichés pendant le "test", mais apparaissent lorsque l'on tente l'importation proprement dite. Dans ce cas, le résumé de l'importation énumère les erreurs à résoudre.</p>
 <h3 id="gestion-des-conflits-dimportation">Gestion des conflits d'importation</h3>
 <p><strong><em>N.B.</em></strong> : Si vous importez dans une nouvelle instance DHIS2, vous n'aurez pas à vous soucier des conflits d'importation, car il n'y a rien dans la base de données que vous importez qui puisse entrer en conflit avec celle-ci. Suivez les instructions pour importer les métadonnées, puis passez à la section "<a href="#configuration-supplémentaire">Configuration supplémentaire</a>".</p>
-<p>Plusieurs de conflits peuvent survenir, mais le plus courant est le fait qu'il y ait des objets de métadonnées dans le paquet de configuration avec un nom, un nom abrégé et/ou un code qui existe déjà dans la base de données cible. Il existe plusieurs solutions alternatives à ces problèmes, avec de différents avantages et inconvénients. La solution la plus appropriée dépendra, par exemple, du type d'objet pour lequel un conflit survient.</p>
+<p>Plusieurs de conflits peuvent survenir, mais le plus courant est le fait qu'il y ait des objets de métadonnées dans le module de configuration avec un nom, un nom abrégé et/ou un code qui existe déjà dans la base de données cible. Il existe plusieurs solutions alternatives à ces problèmes, avec de différents avantages et inconvénients. La solution la plus appropriée dépendra, par exemple, du type d'objet pour lequel un conflit survient.</p>
 <h4 id="option-1">Option 1</h4>
 <p>Renommez l'objet de votre base de données de DHIS2 pour lequel il y a un conflit. L'avantage de cette approche est que vous n'avez pas besoin de modifier le fichier .json, puisque les modifications sont effectuées par l'interface utilisateur de DHIS2. Cette méthode est probablement moins sujette aux erreurs. Cela signifie également que le progiciel de configuration est laissé tel quel, ce qui peut être un avantage, par exemple, lorsque du matériel de formation et de la documentation basés sur le progiciel de configuration seront utilisés.</p>
 <h4 id="option-2">Option 2</h4>
@@ -223,7 +223,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <ul>
 <li>il nécessite une connaissance approfondie de la structure détaillée des métadonnées du DHIS2</li>
 <li>Cette approche ne fonctionne pas pour tous les types d'objets. En particulier, certains types d'objets ont des dépendances compliquées à résoudre de cette manière, par exemple en ce qui concerne les désagrégations.</li>
-<li>Il sera compliqué d'éffectuer des mises à jour du paquet de configuration dans le futur.</li>
+<li>Il sera compliqué d'éffectuer des mises à jour du module de configuration dans le futur.</li>
 </ul>
 <h2 id="configuration-supplementaire">Configuration supplémentaire</h2>
 <p>Une fois que toutes les métadonnées sont importées avec succès, des étapes doivent être mises en oeuvre avant que le module ne soit fonctionnel.</p>
@@ -235,7 +235,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <li>Étapes du programme</li>
 <li>Tableaux de bord</li>
 </ul>
-<p>Il y a trois groupes d'utilisateurs qui sont fournis avec le paquet :</p>
+<p>Il y a trois groupes d'utilisateurs qui sont fournis avec le module :</p>
 <ul>
 <li>COVID19 Accès</li>
 <li>COVID19 Administrateur</li>
@@ -323,7 +323,7 @@ Données : peut visualiser
   </tr>
 </table>
 
-<p>Vous voudrez bien affecter vos utilisateurs au groupe d'utilisateurs approprié en fonction de leur rôle dans le système. Vous pouvez également activer le partage pour d'autres objets du paquet en fonction de votre configuration. Reportez-vous à la [Documentation DHIS2] (https://docs.dhis2.org/master/en/dhis2_user_manual_en/about-sharing-of-objects.html) pour plus d'informations sur la configuration du partage.</p>
+<p>Vous voudrez bien affecter vos utilisateurs au groupe d'utilisateurs approprié en fonction de leur rôle dans le système. Vous pouvez également activer le partage pour d'autres objets du module en fonction de votre configuration. Reportez-vous à la [Documentation DHIS2] (https://docs.dhis2.org/master/en/dhis2_user_manual_en/about-sharing-of-objects.html) pour plus d'informations sur la configuration du partage.</p>
 <h3 id="roles-des-utilisateurs">Rôles des utilisateurs</h3>
 <p>Les utilisateurs auront besoin de rôles d'utilisateur pour pouvoir utiliser les différentes applications du DHIS2. Les rôles minimums suivants sont recommandés :</p>
 <ol>
