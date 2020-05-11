@@ -10,7 +10,7 @@ DHIS2 has released a digital data package to accelerate case detection, situatio
 
 Read more on our dedicated page: [DHIS2 COVID-19 DHIS2 packages](https://www.dhis2.org/covid-19)
 
-###Modules de surveillance COVID-19
+## Modules de surveillance COVID-19
 
 >[Je veux accéder à la documentation en **Français**](fr/index.md)
 
