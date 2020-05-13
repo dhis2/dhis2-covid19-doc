@@ -8,8 +8,8 @@ keywords: [DHIS2, METADATA, COVID19]
 commit:
 version: 03
 applicable_txt: 'Applicable to versions 2.33 to 2.34'
-#logo: resources/images/image1.png
 ---
+
 <!--DHIS2-SECTION-ID:index-->
 
 !INCLUDE "./index.md"
