@@ -16,7 +16,7 @@ applicable_txt: 'Applicable to versions 2.33 to 2.34'
 
 # Version Notes
 
-!INCLUDE "release-notes-v01.md", 1
+!INCLUDE "release-notes-v03.md", 1
 !INCLUDE "upgrade-notes-02-to-03.md", 1
 
 # Installation Guides
