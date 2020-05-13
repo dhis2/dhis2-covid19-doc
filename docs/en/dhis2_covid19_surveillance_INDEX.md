@@ -19,8 +19,6 @@ applicable_txt: 'Applicable to versions 2.33 to 2.34'
 !INCLUDE "release-notes-v03.md", 1
 !INCLUDE "upgrade-notes-02-to-03.md", 1
 
-# Installation Guides
-
-!INCLUDE "installation-guide-tracker.md", 1
-!INCLUDE "installation-guide-event.md", 1
-!INCLUDE "installation-guide-aggregate.md", 1
+!INCLUDE "installation-guide-tracker.md"
+!INCLUDE "installation-guide-event.md"
+!INCLUDE "installation-guide-aggregate.md"
