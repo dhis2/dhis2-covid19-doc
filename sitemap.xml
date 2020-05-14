@@ -2,57 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://www.dhis2.org/covid-19/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/en/release-notes-v03/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/en/upgrade-notes-02-to-03/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/en/installation-guide-tracker/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/en/installation-guide-event/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/en/installation-guide-aggregate/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/fr/release-notes-v03/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/fr/upgrade-notes-02-to-03/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/fr/installation-guide-tracker/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/fr/installation-guide-event/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.dhis2.org/covid-19/fr/installation-guide-aggregate/</loc>
-     <lastmod>2020-05-12</lastmod>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.dhis2.org/covid-19/pt/release-notes-v03/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.dhis2.org/covid-19/pt/upgrade-notes-02-to-03/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.dhis2.org/covid-19/pt/installation-guide-tracker/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.dhis2.org/covid-19/pt/installation-guide-event/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.dhis2.org/covid-19/pt/installation-guide-aggregate/</loc>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

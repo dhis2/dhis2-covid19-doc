@@ -35,9 +35,10 @@
       var is_top_frame = (window === window.parent);
         
         var pageToc = [
-          {title: "Welcome! Bienvenue !", url: "#_top", children: [
+          {title: "Welcome! Bienvenue ! Bem-vindo!", url: "#_top", children: [
               {title: "COVID-19 Surveillance Digital Data Package", url: "#covid-19-surveillance-digital-data-package" },
-              {title: "Modules de surveillance COVID-19", url: "#modules-de-surveillance-covid-19" },
+              {title: "Packages de surveillance COVID-19", url: "#packages-de-surveillance-covid-19" },
+              {title: "Pacote de Dados Digitais de Vigil\u00e2ncia COVID-19", url: "#pacote-de-dados-digitais-de-vigilancia-covid-19" },
           ]},
         ];
 
@@ -100,7 +101,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   
     <ul class="wm-toctree wm-toc-repo">
       <li class="wm-toc-li wm-toc-lev1">
-      <a class="wm-article-link wm-toc-text" href="https://github.com/mrwine/dhis2-covid19-doc/">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/dhis2/dhis2-covid19-doc/">
         <i class="fa fa-github"></i>
 
         GitHub
@@ -172,6 +173,37 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   </ul>
 </li>
 
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Português</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Notas</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/release-notes-v03/" class="wm-article-link wm-toc-text">Notas de Lançamento</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/upgrade-notes-02-to-03/" class="wm-article-link wm-toc-text">Upgrade Notes</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Guia de Instalação</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/installation-guide-tracker/" class="wm-article-link wm-toc-text">Installation Guide Tracker</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/installation-guide-event/" class="wm-article-link wm-toc-text">Installation Guide Events</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/installation-guide-aggregate/" class="wm-article-link wm-toc-text">Installation Guide Aggregate</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
   </ul>
 </nav>
 
@@ -205,7 +237,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="welcome-bienvenue">Welcome! Bienvenue !</h1>
+    <h1 id="welcome-bienvenue-bem-vindo"><a href="#covid-19-surveillance-digital-data-package">Welcome</a>! <a href="#packages-de-surveillance-covid-19">Bienvenue</a> ! <a href="#pacote-de-dados-digitais-de-vigilancia-covid-19">Bem-vindo</a>!</h1>
 <h2 id="covid-19-surveillance-digital-data-package">COVID-19 Surveillance Digital Data Package</h2>
 <blockquote>
 <p><a href="en/">I want to access the documentation in <strong>English</strong></a></p>
@@ -215,7 +247,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p><a href="en/">I want to access the documentation in <strong>English</strong></a></p>
 </blockquote>
 <p>Read more on our dedicated page: <a href="https://www.dhis2.org/covid-19">DHIS2 COVID-19 DHIS2 packages</a></p>
-<h2 id="modules-de-surveillance-covid-19">Modules de surveillance COVID-19</h2>
+<h2 id="packages-de-surveillance-covid-19">Packages de surveillance COVID-19</h2>
 <blockquote>
 <p><a href="fr/">Je veux accéder à la documentation en <strong>Français</strong></a></p>
 </blockquote>
@@ -224,6 +256,15 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p><a href="fr/">Je veux accéder à la documentation en <strong>Français</strong></a></p>
 </blockquote>
 <p>Pour en savoir plus, aller sur la page dédiée aux <a href="https://www.dhis2.org/fr/covid-19">Modules de surveillance COVID-19</a></p>
+<h2 id="pacote-de-dados-digitais-de-vigilancia-covid-19">Pacote de Dados Digitais de Vigilância COVID-19</h2>
+<blockquote>
+<p><a href="pt/">Quero aceder à documentação em <strong>Português</strong></a></p>
+</blockquote>
+<p>O DHIS2 lançou um pacote de dados digitais para acelerar a detecção de casos, a comunicação de situações, a vigilância activa e a resposta ao COVID-19. O pacote é inspirado na concepção pioneira do rastreador DHIS2 do Ministério da Saúde do Sri Lanka para a detecção de casos do COVID-19 e baseia-se em anos de colaboração com a Organização Mundial de Saúde (OMS) para desenvolver normas de sistemas de informação para a vigilância de doenças com base em casos. O pacote de dados digitais COVID-19 inclui metadados normalizados alinhados com as [orientações técnicas sobre vigilância COVID-19 e definições de casos] da OMS (https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions) e orientações de implementação para permitir uma implantação rápida nos países.</p>
+<blockquote>
+<p><a href="pt/">Quero aceder à documentação em <strong>Português</strong></a></p>
+</blockquote>
+<p>Leia mais na nossa página dedicada a este assunto:<a href="https://www.dhis2.org/pt/covid-19">pacotes DHIS2 COVID-19 DHIS2 DHIS2</a></p>
 
   <br>
     
@@ -252,7 +293,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/mrwine/dhis2-covid19-doc/blob/master/docs/README.md"><i class="fa fa-github"></i>
+        <a href="https://github.com/dhis2/dhis2-covid19-doc/blob/master/docs/README.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
       </p><p>2020 DHIS2 Team</p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
@@ -262,5 +303,5 @@ Edit on GitHub</a>
 </html>
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2020-05-11 23:27:35
+Build Date UTC : 2020-05-14 00:57:59
 -->

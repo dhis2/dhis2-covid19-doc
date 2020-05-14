@@ -35,10 +35,10 @@
       var is_top_frame = (window === window.parent);
         
         var pageToc = [
-          {title: "COVID-19 Surveillance Digital Data Package", url: "#_top", children: [
-              {title: "What can the DHIS2 COVID-19 Surveillance Package be used for?", url: "#what-can-the-dhis2-covid-19-surveillance-package-be-used-for" },
-              {title: "Test Out the DHIS2 COVID-19 Surveillance Demo", url: "#test-out-the-dhis2-covid-19-surveillance-demo" },
-              {title: "Download the DHIS2 COVID-19 Surveillance Package", url: "#download-the-dhis2-covid-19-surveillance-package" },
+          {title: "Pacote de Dados Digitais de Vigil\u00e2ncia COVID-19", url: "#_top", children: [
+              {title: "Para que pode ser utilizado o Pacote de Vigil\u00e2ncia DHIS2 COVID-19?", url: "#para-que-pode-ser-utilizado-o-pacote-de-vigilancia-dhis2-covid-19" },
+              {title: "Teste a demonstra\u00e7\u00e3o de vigil\u00e2ncia do DHIS2 COVID-19", url: "#teste-a-demonstracao-de-vigilancia-do-dhis2-covid-19" },
+              {title: "Descarregar o pacote de vigil\u00e2ncia DHIS2 COVID-192 COVID-19 Surveillance Package", url: "#descarregar-o-pacote-de-vigilancia-dhis2-covid-192-covid-19-surveillance-package" },
           ]},
         ];
 
@@ -101,7 +101,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   
     <ul class="wm-toctree wm-toc-repo">
       <li class="wm-toc-li wm-toc-lev1">
-      <a class="wm-article-link wm-toc-text" href="https://github.com/mrwine/dhis2-covid19-doc/">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/dhis2/dhis2-covid19-doc/">
         <i class="fa fa-github"></i>
 
         GitHub
@@ -173,6 +173,37 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   </ul>
 </li>
 
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Português</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Notas</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/release-notes-v03/" class="wm-article-link wm-toc-text">Notas de Lançamento</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/upgrade-notes-02-to-03/" class="wm-article-link wm-toc-text">Upgrade Notes</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Guia de Instalação</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/installation-guide-tracker/" class="wm-article-link wm-toc-text">Installation Guide Tracker</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/installation-guide-event/" class="wm-article-link wm-toc-text">Installation Guide Events</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="pt/installation-guide-aggregate/" class="wm-article-link wm-toc-text">Installation Guide Aggregate</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
   </ul>
 </nav>
 
@@ -187,50 +218,50 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="covid-19-surveillance-digital-data-package">COVID-19 Surveillance Digital Data Package</h1>
-<p>DHIS2 has released a digital data package to accelerate case detection, situation reporting, active surveillance and response for COVID-19. The package is inspired by the Ministry of Health Sri Lanka’s pioneering design of DHIS2 tracker for COVID-19 case detection and draws on years of collaboration with the World Health Organisation (WHO) to develop information system standards for case-based disease surveillance. The COVID-19 digital data package includes standard metadata aligned with the WHO’s <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">technical guidance on COVID-19 surveillance and case definitions</a> and implementation guidance to enable rapid deployment in countries.</p>
-<p>DHIS2 is currently being used for COVID-19 Surveillance in countries around the world. Explore the map below to see where the DHIS2 COVID-19 Packages are being tested and deployed..</p>
-<h2 id="what-can-the-dhis2-covid-19-surveillance-package-be-used-for">What can the DHIS2 COVID-19 Surveillance Package be used for?</h2>
-<p>The package supports surveillance workflows and automated analysis for key components of routine and active surveillance:</p>
+    <h1 id="pacote-de-dados-digitais-de-vigilancia-covid-19">Pacote de Dados Digitais de Vigilância COVID-19</h1>
+<p>O DHIS2 lançou um pacote de dados digitais para acelerar a detecção de casos, a comunicação de situações, a vigilância activa e a resposta ao COVID-19. O pacote é inspirado na concepção pioneira do rastreador DHIS2 do Ministério da Saúde do Sri Lanka para a detecção de casos do COVID-19 e baseia-se em anos de colaboração com a Organização Mundial de Saúde (OMS) para desenvolver normas de sistemas de informação para a vigilância de doenças com base em casos. O pacote de dados digitais COVID-19 inclui metadados normalizados alinhados com as [orientações técnicas sobre vigilância COVID-19 e definições de casos] da OMS (https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions) e orientações de implementação para permitir uma implantação rápida nos países.</p>
+<p>O DHIS2 está actualmente a ser utilizado para a vigilância COVID-19 em países de todo o mundo. Explore o mapa abaixo para ver onde os pacotes DHIS2 COVID-19 estão a ser testados e implantados.</p>
+<h2 id="para-que-pode-ser-utilizado-o-pacote-de-vigilancia-dhis2-covid-19">Para que pode ser utilizado o Pacote de Vigilância DHIS2 COVID-19?</h2>
+<p>O pacote suporta fluxos de trabalho de vigilância e análise automatizada para componentes-chave da vigilância de rotina e activa:</p>
 <ul>
-<li><strong>COVID-19 Case-based surveillance [tracker]</strong>: enrols &amp; tracks suspected cases; captures symptoms, demographics, risk factors &amp; exposures; creates lab requests; links confirmed cases with contacts; and monitors patient outcomes. This package can be installed as a standalone COVID-19 package or can be integrated into a country’s existing integrated disease surveillance &amp; response tracker.</li>
-<li><strong>Contact registration &amp; follow-up program [tracker]</strong>: strengthens active case detection through contact tracing activities, such as identification and follow-up of contacts of a suspected or confirmed COVID-19 case.</li>
-<li><strong>Ports of Entry screening &amp; follow-up program [tracker]</strong>: enrols travellers who have visited high-risk locations at Ports of Entry for 14-day monitoring and follow-up.</li>
-<li><strong>COVID-19 Surveillance Event Program [event]</strong>:a simplified line-list that captures a subset of minimum critical data points to facilitate rapid analysis &amp; response, particularly useful when caseloads or burden of reporting exceeds capacity for case-based surveillance tracker</li>
-<li><strong>COVID-19 Aggregate Surveillance [aggregate]</strong>: an aggregate reporting dataset that captures minimum necessary data points for daily or weekly reporting</li>
+<li><strong>COVID-19 Vigilância baseada em casos [tracker]</strong>: regista e rastreia casos suspeitos; capta sintomas, demografia, factores de risco e exposições; cria pedidos de laboratório; liga casos confirmados a contactos; e monitoriza os resultados dos pacientes. Este pacote pode ser instalado como um pacote autónomo COVID-19 ou pode ser integrado no rastreador integrado de vigilância e resposta a doenças existente num país.</li>
+<li><strong>Programa de registo e acompanhamento de contactos [localizador]</strong>: reforça a detecção activa de casos através de actividades de localização de contactos, tais como a identificação e acompanhamento de contactos de um caso suspeito ou confirmado de COVID-19.</li>
+<li><strong>Programa de rastreio e acompanhamento dos portos de entrada [tracker]</strong>: inscreve os viajantes que visitaram locais de alto risco nos portos de entrada para um acompanhamento e acompanhamento de 14 dias.</li>
+<li><strong>COVID-19 Programa de Eventos de Vigilância [evento]</strong>: uma lista de linhas simplificada que capta um subconjunto de pontos mínimos de dados críticos para facilitar uma análise e resposta rápidas, particularmente útil quando a carga de casos ou a carga de comunicação excede a capacidade do localizador de vigilância baseado em casos</li>
+<li><strong>COVID-19 Vigilância agregada [agregada]</strong>: um conjunto de dados agregado que captura o mínimo de pontos de dados necessários para a comunicação diária ou semanal</li>
 </ul>
-<p>All digital data packages are optimized for Android data collection with the DHIS2 Capture App, which is free to download on the <a href="https://play.google.com/store/apps/details?id=com.dhis2&amp;hl=en">Google Play store</a>.</p>
-<p>Do you work in a country that is interested in installing the DHIS2 COVID-19 tracker? Please contact us at <a href="mailto:post@dhis2.org">post@dhis2.org</a>.</p>
-<h2 id="test-out-the-dhis2-covid-19-surveillance-demo">Test Out the DHIS2 COVID-19 Surveillance Demo</h2>
-<p>Explore the DHIS2 COVID-19 Surveillance Tracker on your own using our online demo database (login required): <strong><a href="https://covid.dhis2.org/demo">DHIS2 COVID-19 Surveillance Interactive Demo</a></strong></p>
-<h2 id="download-the-dhis2-covid-19-surveillance-package">Download the DHIS2 COVID-19 Surveillance Package</h2>
-<p>The following versions of the DHIS2 COVID-19 Surveillance Package are available for download and installation. The COVID-19 configuration package consists of DHIS2 metadata that provides a standard configuration of DHIS2 according to <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">the latest WHO recommendations available</a></p>
-<p>See <a href="release-notes-v03/">v 0.3 package release notes</a> for a summary of updates and new components.</p>
-<p>Please consult the following package-specific documents before you begin:</p>
+<p>Todos os pacotes de dados digitais estão optimizados para a recolha de dados do Android com a DHIS2 Capture App, que pode ser descarregada gratuitamente na loja <a href="https://play.google.com/store/apps/details?id=com.dhis2&amp;hl=en">Google Play</a>.</p>
+<p>Trabalha num país interessado em instalar o rastreador DHIS2 COVID-19? Por favor contacte-nos em <a href="mailto:post@dhis2.org">post@dhis2.org</a>.</p>
+<h2 id="teste-a-demonstracao-de-vigilancia-do-dhis2-covid-19">Teste a demonstração de vigilância do DHIS2 COVID-19</h2>
+<p>Explore o DHIS2 COVID-19 Surveillance Tracker por si próprio utilizando a nossa base de dados de demonstração online (login obrigatório): <strong><a href="https://covid.dhis2.org/demo">DHIS2 COVID-19 Surveillance Interactive Demo</a></strong></p>
+<h2 id="descarregar-o-pacote-de-vigilancia-dhis2-covid-192-covid-19-surveillance-package">Descarregar o pacote de vigilância DHIS2 COVID-192 COVID-19 Surveillance Package</h2>
+<p>As seguintes versões do pacote de vigilância DHIS2 COVID-19 estão disponíveis para download e instalação. O pacote de configuração do COVID-19 consiste em metadados DHIS2 que fornecem uma configuração padrão do DHIS2 de acordo com <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">as últimas recomendações da OMS disponíveis</a></p>
+<p>Ver <a href="release-notes-v03/">v 0.3 notas de lançamento do pacote</a> para um resumo das actualizações e dos novos componentes.</p>
+<p>Por favor, consulte os seguintes documentos específicos do pacote antes de começar:</p>
 <ul>
-<li>The <strong>System Design Document</strong> provides details about the use case and configuration of the package.</li>
-<li>The <strong>Installation Guide</strong> provides guidance on preparing, importing and adapting the package.</li>
+<li>O <strong>Documento de Concepção do Sistema</strong> fornece detalhes sobre o caso de utilização e configuração do pacote.</li>
+<li>O <strong>Guia de Instalação</strong> fornece orientações sobre a preparação, importação e adaptação do pacote.</li>
 </ul>
-<p>The following online resources are also available:</p>
+<p>Estão também disponíveis os seguintes recursos em linha:</p>
 <ul>
-<li>The <strong><a href="https://docs.dhis2.org/master/en/dhis2_tracker_implementation_guide/target-audience.html">Tracker Implementation Guide</a></strong> provides general guidance on planning a DHIS2 Tracker instance.</li>
-<li>The <strong><a href="https://community.dhis2.org/t/frequently-asked-questions-faq/38690">Frequently Asked Questions</a></strong> document provides answers to common questions about the package.</li>
-<li>The <strong><a href="https://community.dhis2.org/c/implementation/covid-19/41">COVID-19 Discussion and Support Channel</a></strong> on the DHIS2 Community of Practice is a forum where you can ask questions, get support for your implementation, and review issues that have been raised and resolved by other community members.</li>
+<li>O <strong><a href="https://docs.dhis2.org/master/en/dhis2_tracker_implementation_guide/target-audience.html">Guia de Implementação do Rastreador</a></strong> fornece orientações gerais sobre o planeamento de uma instância de Rastreador DHIS2.</li>
+<li>O documento <strong><a href="https://community.dhis2.org/t/frequently-asked-questions-faq/38690">Perguntas Mais Frequentes</a></strong> fornece respostas a perguntas comuns sobre o pacote.</li>
+<li>O <strong><a href="https://community.dhis2.org/c/implementation/covid-19/41">Canal de Discussão e Apoio COVID-19</a></strong> sobre a Comunidade de Prática DHIS2 é um fórum onde pode fazer perguntas, obter apoio para a sua implementação e rever questões que foram levantadas e resolvidas por outros membros da comunidade.</li>
 </ul>
 <table style="margin-bottom:1em;">
   <tr>
    <td>
-<strong>DHIS2 Version</strong>
+<strong>Versão do DHIS2</strong>
    </td>
-   <td><strong>Package Version</strong>
+   <td><strong>Versão do Pacote</strong>
    </td>
-   <td><strong>Package Type</strong>
+   <td><strong>Tipo de Pacote</strong>
    </td>
-   <td><strong>Documentation</strong>
+   <td><strong>Documentação</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Metadados</strong>
    </td>
-   <td><strong>Last Updated</strong>
+   <td><strong>Última Actualização</strong>
    </td>
   </tr>
   <tr>
@@ -238,17 +269,17 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
    </td>
    <td>V 0.3.3
    </td>
-   <td>COVID-19 Case-based Surveillance Tracker
+   <td>Rastreador de vigilância com base em casos do COVID-19 
 <p>
-COVID-19 Contact Registration and Follow-up Tracker
+Contacto de Registo e Seguimento do COVID-19
    </td>
-   <td><a href="https://docs.google.com/document/d/12-pex7VOMoRAnsiIcTLq0mTD6UTSfVBZWIX0vufIt6I/edit?usp=sharing">System Design file</a>
+   <td><a href="https://docs.google.com/document/d/12-pex7VOMoRAnsiIcTLq0mTD6UTSfVBZWIX0vufIt6I/edit?usp=sharing">Ficheiro de concepção do sistema</a>
 <p>
-<a href="installation-guide-tracker">Installation Guide</a>
+<a href="installation-guide-tracker">Guia de Instalação</a>
    </td>
-   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19/COVID19_TRACKER_V1_DHIS2.33/metadata.json">Metadata file</a>
+   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19/COVID19_TRACKER_V1_DHIS2.33/metadata.json">Ficheiro dos metadados</a>
    </td>
-   <td>27 March 2020
+   <td>27 de Março de 2020
    </td>
   </tr>
   <tr>
@@ -256,15 +287,15 @@ COVID-19 Contact Registration and Follow-up Tracker
    </td>
    <td>V 0.3.2
    </td>
-   <td>COVID-19 Surveillance Event Program
+   <td>Programa de Eventos de Vigilância do COVID-19
    </td>
-   <td><a href="https://docs.google.com/document/d/1_OxdOmlPouNmoXD6FUEFZAgaPQARKUdrq0h0Gco4ARw/edit">System Design File</a>
+   <td><a href="https://docs.google.com/document/d/1_OxdOmlPouNmoXD6FUEFZAgaPQARKUdrq0h0Gco4ARw/edit">Ficheiro de Concepção do Sistema</a>
 <p>
-<a href="installation-guide-event">Installation Guide</a>
+<a href="installation-guide-event">Guia de Instalação</a>
    </td>
-   <td> <a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_EVENT/COVID19_EVENT_TRACKER_V1_DHIS2.33/metadata.json">Metadata file</a>
+   <td> <a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_EVENT/COVID19_EVENT_TRACKER_V1_DHIS2.33/metadata.json">Ficheiro dos metadados</a>
    </td>
-   <td>27 March 2020
+   <td>27 de Março de 2020
    </td>
   </tr>
   <tr>
@@ -278,21 +309,21 @@ COVID-19 Contact Registration and Follow-up Tracker
    </td>
    <td>V 0.3.2
    </td>
-   <td>COVID-19 Aggregate Surveillance
+   <td>Vigilância agregada do COVID-19
    </td>
-   <td><a href="https://docs.google.com/document/d/1My2jVCAwPVA3j9m21xp0UCti--N8am9BXsYEjI7qn3I/edit#">System Design File</a>
+   <td><a href="https://docs.google.com/document/d/1My2jVCAwPVA3j9m21xp0UCti--N8am9BXsYEjI7qn3I/edit#">Ficheiro de Concepção do Sistema</a>
 <p>
-<a href="installation-guide-aggregate">Installation guide</a>
+<a href="installation-guide-aggregate">Guia de Instalação</a>
    </td>
-   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.30/metadata.json">2.30 Metadata File</a>
+   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.30/metadata.json">Ficheiro dos metadados para 2.30</a>
 <p>
-<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.31/metadata.json">2.31 Metadata File</a>
+<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.31/metadata.json">Ficheiro dos metadados para 2.31</a>
 <p>
-<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.32/metadata.json">2.32 Metadata File</a>
+<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.32/metadata.json">Ficheiro dos metadados para 2.32</a>
 <p>
-<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.33/metadata.json">2.33 Metadata File</a>
+<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.33/metadata.json">Ficheiro dos metadados para 2.33</a>
    </td>
-   <td>27 March 2020
+   <td>27 de Março de 2020
    </td>
   </tr>
   <tr>
@@ -300,15 +331,15 @@ COVID-19 Contact Registration and Follow-up Tracker
    </td>
    <td>V 0.3.1
    </td>
-   <td>Points of Entry Screening Tracker
+   <td>Rastreador de pontos de entrada
    </td>
-   <td> <a href="https://drive.google.com/open?id=1PJ4iRJGmUBv6jF7hcACxt-dhd5JRpeBt0mKxgPBsmvc">System design file</a>
+   <td> <a href="https://drive.google.com/open?id=1PJ4iRJGmUBv6jF7hcACxt-dhd5JRpeBt0mKxgPBsmvc">Ficheiro de Concepção do Sistema</a>
 <p>
-<a href="installation-guide-tracker">Installation Guide</a>
+<a href="installation-guide-tracker">Guia de Instalação</a>
    </td>
-   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_POE/COVID19_POE_TRACKER_V1_DHIS2.33/metadata.json">Metadata file</a>
+   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_POE/COVID19_POE_TRACKER_V1_DHIS2.33/metadata.json">Ficheiro dos metadados</a>
    </td>
-   <td>27 March 2020
+   <td>27 de Março de 2020
    </td>
   </tr>
 </table>
@@ -321,7 +352,7 @@ COVID-19 Contact Registration and Follow-up Tracker
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/mrwine/dhis2-covid19-doc/blob/master/docs/pt/index.md"><i class="fa fa-github"></i>
+        <a href="https://github.com/dhis2/dhis2-covid19-doc/blob/master/docs/pt/index.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
       </p><p>2020 DHIS2 Team</p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
@@ -331,5 +362,5 @@ Edit on GitHub</a>
 </html>
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2020-05-11 23:27:36
+Build Date UTC : 2020-05-14 00:57:59
 -->

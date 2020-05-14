@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://www.dhis2.org/covid-19/pt/release-notes-v03/">
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>COVID-19 Package Release Notes v0.3 - DHIS2 COVID-19 Packages - Support material</title>
+    <title>Notas de Lançamento - DHIS2 COVID-19 Packages - Support material</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -33,10 +33,10 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "COVID-19 Package Release Notes v0.3", url: "#_top", children: [
-              {title: "Overview", url: "#overview" },
-              {title: "COVID-19 Case-Based Surveillance Program (Tracker)", url: "#covid-19-case-based-surveillance-program-tracker" },
-              {title: "COVID-19 Contact Registration &amp; Follow-up Program (Tracker)", url: "#covid-19-contact-registration-follow-up-program-tracker" },
+          {title: "Notas de Lan\u00e7amento do Pacote COVID-19 v0.3", url: "#_top", children: [
+              {title: "Resumo", url: "#resumo" },
+              {title: "Programa de Vigil\u00e2ncia com Base em Casos COVID-19 (Tracker)", url: "#programa-de-vigilancia-com-base-em-casos-covid-19-tracker" },
+              {title: "Programa de Registo e Acompanhamento de Contactos COVID-19 (Tracker)", url: "#programa-de-registo-e-acompanhamento-de-contactos-covid-19-tracker" },
           ]},
         ];
 
@@ -56,63 +56,117 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     
+    
+      
+    
 
-    <h1 id="covid-19-package-release-notes-v03">COVID-19 Package Release Notes v0.3</h1>
-<h2 id="overview">Overview</h2>
-<p>We have made several updates to the existing package to align with new COVID-19 <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">surveillance guidelines released by the WHO on March 20, 2020</a> and introduced new components to the overall package of support. Please review the notes here and contact us on the COVID-19 discussion board in the <a href="https://community.dhis2.org/c/implementation/covid-19/">community of practice</a> with any questions.</p>
-<p><strong>All metadata packages and documentation can be downloaded from <a href="https://www.dhis2.org/covid-19">dhis2.org.covid-19</a>.</strong></p>
-<p>Packages are currently translated into French, Spanish, Portuguese and Russian, with additional languages in the pipeline (Arabic, Lao, Burmese). We can support metadata package translations in our global translation platform and invite the community to contribute if your country is interested in translating the package for a new language. <a href="https://community.dhis2.org/t/the-new-dhis2-translation-platform-is-now-available/37755">Check out our Community of Practice announcement </a>and get started as a contributing translator here <a href="https://docs.dhis2.org/master/en/implementer/html/user-interface-localization.html#translation-server">by joining the DHIS2 translation platform</a>. Please contact us at translate@dhis2.org.</p>
-<p>The new release includes:</p>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-link">
+        Upgrade Notes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../fr/installation-guide-aggregate/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../fr/installation-guide-aggregate/" class="btn btn-xs btn-link">
+        Guide d&apos;installation pour Agrégat
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="notas-de-lancamento-do-pacote-covid-19-v03">Notas de Lançamento do Pacote COVID-19 v0.3</h1>
+<h2 id="resumo">Resumo</h2>
+<p>Fizemos várias actualizações ao pacote existente para o alinhar com o novo COVID-19 <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions">directrizes de vigilância divulgadas pela OMS em 20 de Março de 2020</a> e introduzimos novos componentes no pacote global de apoio. Por favor, reveja as notas aqui e contacte-nos no fórum de discussão da COVID-19 na <a href="https://community.dhis2.org/c/implementation/covid-19/">comunidade de práticas</a> com quaisquer questões.</p>
+<p><strong>Todos os pacotes de metadados e documentação podem ser descarregados de <a href="https://www.dhis2.org/pt/covid-19">dhis2.org.covid-19</a>.</strong></p>
+<p>Os pacotes estão actualmente traduzidos para francês, espanhol, português e russo, com línguas adicionais no pipeline (árabe, lao, birmanês). Podemos suportar traduções de pacotes de metadados na nossa plataforma global de tradução e convidamos a comunidade a contribuir se o seu país estiver interessado em traduzir o pacote para uma nova língua. <a href="https://community.dhis2.org/t/the-new-dhis2-translation-platform-is-now-available/37755">Veja o anúncio da nossa Comunidade de Práticas </a>e comece a contribuir como tradutor aqui <a href="https://docs.dhis2.org/master/en/implementer/html/user-interface-localization.html#translation-server">juntando-se à plataforma de tradução DHIS2</a>. Por favor contacte-nos em translate@dhis2.org.</p>
+<p>O novo lançamento inclui:</p>
 <ol>
-<li>COVID-19 Case-based Surveillance Tracker program (v0.3.3)</li>
-<li>COVID-19 Contact Registration &amp; Follow-Up program (v0.3.2)</li>
-<li>COVID-19 Surveillance Event program (v0.3.2)</li>
-<li>COVID-19 Aggregate Surveillance Reporting (v0.3.2)</li>
-<li><strong>NEW</strong> Points of Entry Screening Tracker program (v0.3.1)</li>
+<li>Programa de rastreio de vigilância com base em casos COVID-19 (v0.3.3)</li>
+<li>Programa de Registro e Acompanhamento de Contatos COVID-19 (v0.3.2)</li>
+<li>Programa de Eventos de Vigilância COVID-19 (v0.3.2)</li>
+<li>Relatório de vigilância agregada COVID-19 (v0.3.2)</li>
+<li><strong>NOVO</strong> Programa de rastreio dos pontos de entrada (v0.3.1)</li>
 </ol>
-<h2 id="covid-19-case-based-surveillance-program-tracker">COVID-19 Case-Based Surveillance Program (Tracker)</h2>
+<h2 id="programa-de-vigilancia-com-base-em-casos-covid-19-tracker">Programa de Vigilância com Base em Casos COVID-19 (Tracker)</h2>
 <ol>
-<li>Metadata codes updated to align with the <a href="https://www.who.int/docs/default-source/coronaviruse/2020-02-27-data-dictionary-en.xlsx">WHO case-based reporting data dictionary</a></li>
-<li>Program indicators updated to reflect new WHO case definitions for probable cases (reference the updated case definitions in the interim surveillance guidelines updated March 20, 2020 <a href="https://apps.who.int/iris/bitstream/handle/10665/331506/WHO-2019-nCoV-SurveillanceGuidance-2020.6-eng.pdf">WHO interim surveillance guidelines updated March 20, 2020</a>)</li>
-<li>Age legends have been updated to meet new WHO guidance for weekly reporting</li>
-<li>relationshipType added to metadata package</li>
-<li>Minor fixes to the metadata to enable easier installation of the package (i.e. indicatorType UID matches indicator type included in aggregate package)</li>
+<li>Códigos de metadados actualizados para se alinharem com o <a href="https://www.who.int/docs/default-source/coronaviruse/2020-02-27-data-dictionary-en.xlsx">dicionário de dados da OMS baseado em casos de notificação</a></li>
+<li>Indicadores do programa actualizados para reflectir as novas definições de casos prováveis da OMS (consultar as definições de casos actualizadas nas orientações de vigilância provisórias actualizadas de 20 de Março de 2020 <a href="https://apps.who.int/iris/bitstream/handle/10665/331506/WHO-2019-nCoV-SurveillanceGuidance-2020.6-eng.pdf">orientações de vigilância provisórias da OMS actualizadas de 20 de Março de 2020</a>)</li>
+<li>As lendas etárias foram actualizadas para satisfazer as novas orientações da OMS para a comunicação semanal</li>
+<li>relationshipType adicionado ao pacote de metadados</li>
+<li>Pequenas correcções aos metadados para permitir uma instalação mais fácil do pacote (ou seja, indicadorType UID corresponde ao tipo de indicador incluído no pacote agregado)</li>
 </ol>
-<h2 id="covid-19-contact-registration-follow-up-program-tracker">COVID-19 Contact Registration &amp; Follow-up Program (Tracker)</h2>
+<h2 id="programa-de-registo-e-acompanhamento-de-contactos-covid-19-tracker">Programa de Registo e Acompanhamento de Contactos COVID-19 (Tracker)</h2>
 <ol>
-<li>A new program stage has been added to enable repeatable ‘follow-up’ of a case contact. This was added to reflect workflows implemented in Uganda and Togo where contacts may be monitored repeatedly over the course of 14 days to determine if there are symptoms. The <strong><em>program</em></strong> is based on WHO guidelines which can be found <a href="https://www.who.int/internal-publications-detail/considerations-in-the-investigation-of-cases-and-clusters-of-covid-19">here</a>, as well as information obtained via the <a href="https://openwho.org/courses/introduction-to-ncov">OpenWHO</a> website.</li>
-<li>Age legends have been updated to meet new WHO guidance for weekly reporting</li>
-<li>relationshipType added to metadata package</li>
-<li>Minor fixes to the metadata to enable easier installation of the package</li>
+<li>Foi acrescentada uma nova fase ao programa para permitir o "acompanhamento" repetido de um contacto de caso. Esta fase foi acrescentada para reflectir os fluxos de trabalho implementados no Uganda e no Togo, onde os contactos podem ser repetidamente monitorizados ao longo de 14 dias para determinar se existem sintomas. O <strong><em>programa</em></strong> baseia-se nas directrizes da OMS que podem ser encontradas <a href="https://www.who.int/internal-publications-detail/considerations-in-the-investigation-of-cases-and-clusters-of-covid-19">aqui</a>, bem como nas informações obtidas através do sítio Web <a href="https://openwho.org/courses/introduction-to-ncov">OpenWHO</a>.</li>
+<li>As lendas etárias foram actualizadas para satisfazer as novas orientações da OMS para a comunicação semanal</li>
+<li>relationshipType adicionado ao pacote de metadados</li>
+<li>Pequenas correcções aos metadados para permitir uma instalação mais fácil do pacote</li>
 </ol>
-<h3 id="covid-19-event-reporting-program">COVID-19 Event Reporting Program</h3>
+<h3 id="programa-de-notificacao-de-eventos-covid-19">Programa de Notificação de Eventos COVID-19</h3>
 <ol>
-<li>Program rules updated to prevent error when submitting the form in row view (see <a href="https://jira.dhis2.org/browse/DHIS2-8519">Jira issue 8519</a>)</li>
-<li>Program indicators updated to reflect new WHO case definitions</li>
-<li>Age legends have been updated to meet new WHO guidance for weekly reporting</li>
-<li>Minor fixes to the metadata to enable easier installation of the package</li>
+<li>Regras do programa actualizadas para evitar erros na apresentação do formulário na visualização em linha (ver <a href="https://jira.dhis2.org/browse/DHIS2-8519">Jira issue 8519</a>)</li>
+<li>Indicadores do programa actualizados para reflectir as novas definições de casos da OMS</li>
+<li>As lendas etárias foram actualizadas para satisfazer as novas orientações da OMS para a comunicação semanal</li>
+<li>Pequenas correcções aos metadados para permitir uma instalação mais fácil do pacote</li>
 </ol>
-<h3 id="covid-19-aggregate-surveillance-reporting">COVID-19 Aggregate Surveillance Reporting</h3>
-<p>The following updates were made to reflect new guidance in <a href="https://apps.who.int/iris/bitstream/handle/10665/331506/WHO-2019-nCoV-SurveillanceGuidance-2020.6-eng.pdf">WHO guidelines updated March 20, 2020</a>, including updated global aggregate reporting to WHO (weekly &amp; daily)</p>
+<h3 id="relatorios-de-vigilancia-agregados-covid-19">Relatórios de Vigilância Agregados COVID-19</h3>
+<p>As seguintes actualizações foram feitas para reflectir as novas orientações <a href="https://apps.who.int/iris/bitstream/handle/10665/331506/WHO-2019-nCoV-SurveillanceGuidance-2020.6-eng.pdf">directrizes da OMS actualizadas em 20 de Março de 2020</a>, incluindo a actualização da informação global agregada à OMS (semanal e diária)</p>
 <ol>
-<li>Age categories updated according to new age groups</li>
-<li>New indicators added for proportion of males among confirmed cases and proportion of males among confirmed deaths</li>
-<li>New weekly dataset to capture classification of transmission at sub-national level one (i.e. provincial -- can be assigned to any sub-national level as appropriate in country) per updated WHO weekly reporting guidelines</li>
-<li>Minor fixes to the metadata to enable easier installation of the package</li>
+<li>Categorias etárias actualizadas de acordo com novas faixas etárias</li>
+<li>Novos indicadores adicionados para a proporção de homens entre os casos confirmados e para a proporção de homens entre as mortes confirmadas</li>
+<li>Novo conjunto de dados semanais para a classificação da transmissão a nível subnacional um (ou seja, provincial - pode ser atribuído a qualquer nível subnacional, conforme adequado no país) por orientações actualizadas da OMS em matéria de transmissão semanal</li>
+<li>Pequenas correcções aos metadados para permitir uma instalação mais fácil do pacote</li>
 </ol>
-<h3 id="new-points-of-entry-tracker-program"><strong>NEW</strong> Points of Entry Tracker Program</h3>
-<p>The Points of Entry tracker program use case was designed to support the registration of travellers entering a country with a history of travel to, or residence in, a country/area/territory reporting local transmission of COVID-19 who may need to be followed up to ensure no symptoms develop. It is based on the design implemented by HISP Sri Lanka to support the Sri Lanka Ministry of Health with minor changes to make the program more generic to global use and to align with the other tracker programs in the COVID-19 package. The package supports interventions at Points of Entry detailed in the WHO <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/points-of-entry-and-mass-gatherings">technical guidance for the management of ill persons at points of entry</a>.</p>
-<p>Please read more about the POE program in the <a href="https://docs.google.com/document/d/1PJ4iRJGmUBv6jF7hcACxt-dhd5JRpeBt0mKxgPBsmvc/edit#">system design document</a>.</p>
+<h3 id="novo-programa-de-rastreio-de-pontos-de-entrada"><strong>NOVO</strong> Programa de rastreio de pontos de entrada</h3>
+<p>O caso de utilização do programa "Points of Entry tracker" foi concebido para apoiar o registo de viajantes que entram num país com um historial de viagem ou residência num país/área/território que comunique a transmissão local da COVID-19 e que possam ter de ser acompanhados para garantir que não se desenvolvem sintomas. Baseia-se na concepção implementada pela HISP Sri Lanka para apoiar o Ministério da Saúde do Sri Lanka com pequenas alterações para tornar o programa mais genérico para uso global e para se alinhar com os outros programas de rastreio do pacote COVID-19. O pacote apoia intervenções nos pontos de entrada detalhados na OMS [orientação técnica para a gestão de pessoas doentes nos pontos de entrada] (https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/points-of-entry-and-mass-gatherings).</p>
+<p>Por favor leia mais sobre o programa POE no <a href="https://docs.google.com/document/d/1PJ4iRJGmUBv6jF7hcACxt-dhd5JRpeBt0mKxgPBsmvc/edit#">documento de concepção do sistema</a>.</p>
 
   <br>
     
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../upgrade-notes-02-to-03/" class="btn btn-xs btn-link">
+        Upgrade Notes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../fr/installation-guide-aggregate/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../fr/installation-guide-aggregate/" class="btn btn-xs btn-link">
+        Guide d&apos;installation pour Agrégat
+      </a>
+    </div>
+    
+  </div>
 
     <br>
 </div>
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/mrwine/dhis2-covid19-doc/blob/master/docs/pt/release-notes-v03.md"><i class="fa fa-github"></i>
+        <a href="https://github.com/dhis2/dhis2-covid19-doc/blob/master/docs/pt/release-notes-v03.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
       </p><p>2020 DHIS2 Team</p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
