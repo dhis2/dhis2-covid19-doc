@@ -3,7 +3,7 @@ site_url: https://www.dhis2.org/covid-19
 site_author: DHIS2 Team
 copyright: 2020 DHIS2 Team
 site_description: Support material for the DHIS2 COVID-19 Digital Packages
-repo_url: https://github.com/mrwine/dhis2-covid19-doc/
+repo_url: https://github.com/dhis2/dhis2-covid19-doc/
 edit_uri: blob/master/docs/
 
 extra_css:
@@ -27,6 +27,14 @@ nav:
         - 'Guide d&apos;installation pour Tracker': 'fr/installation-guide-tracker.md'
         - 'Guide d&apos;installation pour Événements': 'fr/installation-guide-event.md'
         - 'Guide d&apos;installation pour Agrégat': 'fr/installation-guide-aggregate.md'
+    - Português:
+      - 'Notas':
+        - 'Notas de Lançamento': 'pt/release-notes-v03.md'
+        - 'Upgrade Notes': 'pt/upgrade-notes-02-to-03.md'
+      - 'Guia de Instalação':
+        - 'Installation Guide Tracker': 'pt/installation-guide-tracker.md'
+        - 'Installation Guide Events': 'pt/installation-guide-event.md'
+        - 'Installation Guide Aggregate': 'pt/installation-guide-aggregate.md'
 
 theme: 'windmill'
 

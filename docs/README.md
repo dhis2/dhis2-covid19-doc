@@ -1,4 +1,4 @@
-# Welcome! Bienvenue !
+# Welcome! Bienvenue ! Bem-vindo!
 
 ## COVID-19 Surveillance Digital Data Package
 
@@ -10,7 +10,7 @@ DHIS2 has released a digital data package to accelerate case detection, situatio
 
 Read more on our dedicated page: [DHIS2 COVID-19 DHIS2 packages](https://www.dhis2.org/covid-19)
 
-## Modules de surveillance COVID-19
+## Packages de surveillance COVID-19
 
 >[Je veux accéder à la documentation en **Français**](fr/index.md)
 
@@ -19,3 +19,13 @@ DHIS2 a publié un module de données numériques pour accélérer la détection
 > [Je veux accéder à la documentation en **Français**](fr/index.md)
 
 Pour en savoir plus, aller sur la page dédiée aux [Modules de surveillance COVID-19](https://www.dhis2.org/fr/covid-19)
+
+## Pacote de Dados Digitais de Vigilância COVID-19
+
+> [Quero aceder à documentação em **Português**](pt/index.md)
+
+O DHIS2 lançou um pacote de dados digitais para acelerar a detecção de casos, a comunicação de situações, a vigilância activa e a resposta ao COVID-19. O pacote é inspirado na concepção pioneira do rastreador DHIS2 do Ministério da Saúde do Sri Lanka para a detecção de casos do COVID-19 e baseia-se em anos de colaboração com a Organização Mundial de Saúde (OMS) para desenvolver normas de sistemas de informação para a vigilância de doenças com base em casos. O pacote de dados digitais COVID-19 inclui metadados normalizados alinhados com as [orientações técnicas sobre vigilância COVID-19 e definições de casos] da OMS (https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions) e orientações de implementação para permitir uma implantação rápida nos países.
+
+> [Quero aceder à documentação em **Português**](pt/index.md)
+
+Leia mais na nossa página dedicada a este assunto:[pacotes DHIS2 COVID-19 DHIS2 DHIS2](https://www.dhis2.org/pt/covid-19)
