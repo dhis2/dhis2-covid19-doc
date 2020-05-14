@@ -1,4 +1,4 @@
-# COVID-19 Aggregate Package Installation Guide
+# Aggregate Package Installation Guide
 
 <ul style="text-align: right">
   <li style="list-style: none">Last updated 27/03/2020</li>

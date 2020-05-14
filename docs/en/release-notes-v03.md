@@ -1,4 +1,4 @@
-# COVID-19 Package Release Notes v0.3
+# Package Release Notes v0.3
 
 ## Overview
 

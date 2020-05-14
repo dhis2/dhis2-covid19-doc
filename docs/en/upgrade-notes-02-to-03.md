@@ -1,4 +1,4 @@
-# COVID-19 Upgrade Notes
+# Upgrade Notes
 
 > ***NOTE***: This document is only for those who are installing the new version (v0.3.x) of the indicated package over the previous version (v0.2/v0.1). Please see the full installation instructions if you are installing on a new instance.
 >
