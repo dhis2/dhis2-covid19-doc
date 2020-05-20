@@ -28,7 +28,7 @@ Explore the DHIS2 COVID-19 Surveillance Tracker on your own using our online dem
 
 The following versions of the DHIS2 COVID-19 Surveillance Package are available for download and installation. The COVID-19 configuration package consists of DHIS2 metadata that provides a standard configuration of DHIS2 according to [the latest WHO recommendations available](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions)
 
-See [v 0.3 package release notes](release-notes-v03.md) for a summary of updates and new components.
+See [v 0.3 package release notes](package-release-notes-v03.html) for a summary of updates and new components.
 
 Please consult the following package-specific documents before you begin:
 
