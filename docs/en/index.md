@@ -41,98 +41,29 @@ The following online resources are also available:
 *   The **[Frequently Asked Questions](https://community.dhis2.org/t/frequently-asked-questions-faq/38690)** document provides answers to common questions about the package.
 *   The **[COVID-19 Discussion and Support Channel](https://community.dhis2.org/c/implementation/covid-19/41)** on the DHIS2 Community of Practice is a forum where you can ask questions, get support for your implementation, and review issues that have been raised and resolved by other community members.
 
-<table style="margin-bottom:1em;">
-  <tr>
-   <td>
-<strong>DHIS2 Version</strong>
-   </td>
-   <td><strong>Package Version</strong>
-   </td>
-   <td><strong>Package Type</strong>
-   </td>
-   <td><strong>Documentation</strong>
-   </td>
-   <td><strong>Metadata</strong>
-   </td>
-   <td><strong>Last Updated</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>2.33
-   </td>
-   <td>V 0.3.3
-   </td>
-   <td>COVID-19 Case-based Surveillance Tracker
-<p>
-COVID-19 Contact Registration and Follow-up Tracker
-   </td>
-   <td><a href="https://docs.google.com/document/d/12-pex7VOMoRAnsiIcTLq0mTD6UTSfVBZWIX0vufIt6I/edit?usp=sharing">System Design file</a>
-<p>
-<a href="installation-guide-tracker">Installation Guide</a>
-   </td>
-   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19/COVID19_TRACKER_V1_DHIS2.33/metadata.json">Metadata file</a>
-   </td>
-   <td>27 March 2020
-   </td>
-  </tr>
-  <tr>
-   <td>2.33
-   </td>
-   <td>V 0.3.2
-   </td>
-   <td>COVID-19 Surveillance Event Program
-   </td>
-   <td><a href="https://docs.google.com/document/d/1_OxdOmlPouNmoXD6FUEFZAgaPQARKUdrq0h0Gco4ARw/edit">System Design File</a>
-<p>
-<a href="installation-guide-event">Installation Guide</a>
-   </td>
-   <td> <a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_EVENT/COVID19_EVENT_TRACKER_V1_DHIS2.33/metadata.json">Metadata file</a>
-   </td>
-   <td>27 March 2020
-   </td>
-  </tr>
-  <tr>
-   <td>2.30
-<p>
-2.31
-<p>
-2.32
-<p>
-2.33
-   </td>
-   <td>V 0.3.2
-   </td>
-   <td>COVID-19 Aggregate Surveillance
-   </td>
-   <td><a href="https://docs.google.com/document/d/1My2jVCAwPVA3j9m21xp0UCti--N8am9BXsYEjI7qn3I/edit#">System Design File</a>
-<p>
-<a href="installation-guide-aggregate">Installation guide</a>
-   </td>
-   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.30/metadata.json">2.30 Metadata File</a>
-<p>
-<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.31/metadata.json">2.31 Metadata File</a>
-<p>
-<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.32/metadata.json">2.32 Metadata File</a>
-<p>
-<a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.33/metadata.json">2.33 Metadata File</a>
-   </td>
-   <td>27 March 2020
-   </td>
-  </tr>
-  <tr>
-   <td>2.33
-   </td>
-   <td>V 0.3.1
-   </td>
-   <td>Points of Entry Screening Tracker
-   </td>
-   <td> <a href="https://drive.google.com/open?id=1PJ4iRJGmUBv6jF7hcACxt-dhd5JRpeBt0mKxgPBsmvc">System design file</a>
-<p>
-<a href="installation-guide-tracker">Installation Guide</a>
-   </td>
-   <td><a href="https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_POE/COVID19_POE_TRACKER_V1_DHIS2.33/metadata.json">Metadata file</a>
-   </td>
-   <td>27 March 2020
-   </td>
-  </tr>
-</table>
+| DHIS2 Version                | Package Version | Package Type                                                 | Documentation                                                | Metadata                                                     | Last Updated  |
+| ---------------------------- | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- |
+| 2.33                         | V 0.3.3         | COVID-19 Case-based Surveillance Tracker<br>COVID-19 Contact Registration and Follow-up Tracker | [System Design file][st33]<br>[Installation Guide][it33]| [Metadata file][mt33] | 27 March 2020 |
+| 2.33                         | V 0.3.2         | COVID-19 Surveillance Event Program                          | [System Design file][se33]<br>[Installation Guide][ie33]| [Metadata file][me33] | 27 March 2020 |
+| 2.30<br>2.31<br>2.32<br>2.33 | V 0.3.2         | COVID-19 Aggregate Surveillance                              | [System Design File][sa33]<br>[Installation guide][ia33] | [2.30 Metadata File][ma30]<br>[2.31 Metadata File][ma31]<br>[2.32 Metadata File][ma32]<br>[2.33 Metadata File][ma33] | 27 March 2020 |
+| 2.33                         | V 0.3.1         | Points of Entry Screening Tracker                            | [System design file][sp33]<br>[Installation Guide][ip33] | [Metadata file][mp33] | 27 March 2020 |
+
+
+[st33]: <https://docs.google.com/document/d/12-pex7VOMoRAnsiIcTLq0mTD6UTSfVBZWIX0vufIt6I/edit> 
+[it33]: <tracker-packages-installation-guide.html>
+[mt33]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19/COVID19_TRACKER_V1_DHIS2.33/metadata.json>
+
+[se33]: <https://docs.google.com/document/d/1_OxdOmlPouNmoXD6FUEFZAgaPQARKUdrq0h0Gco4ARw/edit> 
+[ie33]: <event-package-installation-guide-v032.html>
+[me33]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_EVENT/COVID19_EVENT_TRACKER_V1_DHIS2.33/metadata.json>
+
+[sa33]: <https://docs.google.com/document/d/1My2jVCAwPVA3j9m21xp0UCti--N8am9BXsYEjI7qn3I/edit#>
+[ia33]: <aggregate-package-installation-guide.html>
+[ma30]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.30/metadata.json>
+[ma31]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.31/metadata.json>
+[ma32]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.32/metadata.json>
+[ma33]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_AGG/COVID19_AGG_COMPLETE_V1_DHIS2.33/metadata.json>
+
+[sp33]: <https://drive.google.com/open?id=1PJ4iRJGmUBv6jF7hcACxt-dhd5JRpeBt0mKxgPBsmvc>
+[ip33]: <tracker-packages-installation-guide.html>
+[mp33]: <https://raw.githubusercontent.com/dhis2/metadata-package-development/work-in-progress/metadata/COVID19_POE/COVID19_POE_TRACKER_V1_DHIS2.33/metadata.json>
