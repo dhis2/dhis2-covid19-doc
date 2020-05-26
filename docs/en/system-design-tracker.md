@@ -87,69 +87,13 @@ The design of the case-based tracker program assumes that [WHO case definitions]
 
 #### Program Description: COVID-19 Case Testing, Diagnosis & Outcome
 
-<table>
- <thead>
-  <tr class="header">
-   <th>Stage</th>
-   <th>Description</th>
-  </tr>
- </thead>
- <tbody>
-  <tr class="odd">
-   <td><p><strong>Enrollment details &amp; Attributes</strong></p>
-   <td><p>The Tracked Entity is the case, which is represented by a Tracked Entity Type of ‘person.’</p>
-   <p>Enrollment date = Date of registration of the case.</p>
-   <p>Related programs = COVID-19 Contact registration &amp; follow-up</p>
-   <p>Attributes include basic personal information and unique case identifiers</p>
-   <ul>
-    <li><p>System Generated Case ID</li>
-    <li>Local Case ID</li>
-    <li>Age</li>
-    <li>First Name</li>
-    <li>Surname</li>
-    <li>Sex</li>
-    <li>Case phone number</li>
-    <li>First Name (parent or carer)</li>
-    <li>Surname (parent or carer)</li>
-    <li>Home Address</li>
-    <li>Workplace/school physical address</li>
-    <li>Country of Residence</li>
-    <li>Facility contact number</li>
-   </ul></td>
-  </tr>
-  <tr class="even">
-   <td><p><strong>Stage 1:</strong></p>
-   <p><strong>Clinical Examination and Exposures</strong></td>
-   <td><p>This stage records a suspected case’s clinical symptoms and exposures including:</p>
-   <ul>
-    <li>Symptoms</li>
-    <li>Pregnancy and underlying conditions</li>
-    <li>Hospitalisation and Isolation</li>
-    <li>Exposures in 14 days prior to symptoms</li>
-    <li>Travel history</li>
-    <li>Contact with confirmed case</li>
-   </ul>
-   <p>After examination, you can record if the case has been hospitalised or isolated, and information surrounding this.</p></td>
-   </tr>
-   <tr class="odd">
-    <td><p><strong>Stage 2:</strong></p>
-    <p><strong>Lab Request</strong></p>
-    <p><strong>[repeatable]</strong></p></td>
-    <td>The lab request records the reason for testing and other information that a lab needs to process a sample and test it for COVID19. The information provided here can help lab personnel prioritize lab tests when resources are limited. The person entering this data could be the same person who registered the suspected case and recorded the patient’s clinical exam and exposures; or may be other personnel charged with making lab requests.</td>
-   </tr>
-   <tr class="even">
-    <td><p><strong>Stage 3:</strong></p>
-    <p><strong>Lab Results</strong></p>
-    <p><strong>[repeatable]</strong></p></td>
-    <td>The Lab Results stage records the type and results from laboratory testing. It can be done directly at the lab or as secondary data entry. This stage is repeatable as samples for a given case may be tested multiple times (i.e. in the case of an inconclusive laboratory results, a new lab test can be conducted and results recorded).</td>
-   </tr>
-   <tr class="odd">
-    <td><p><strong>Stage 4:</strong></p>
-    <p><strong>Health Outcome</strong></p></td>
-    <td>The health outcome records the final outcome of the case: (recovered, not recovered, dead or unknown) including date of discharge or death as applicable.</td>
-   </tr>
-  </tbody>
-</table>
+| Stage | Description |
+|---|---|
+| **Enrollment details &amp; Attributes** | The Tracked Entity is the case, which is represented by a Tracked Entity Type of ‘person.’ The *Enrollment date* is the date of registration of the case. The Related programs is *COVID-19 Contact registration &amp; follow-up*. The attributes include the following basic personal information and unique case identifiers: *System Generated Case ID*, *Local Case ID*, *Age*, *First Name*, *Surname*, *Sex*, *Case phone number*, *First Name (parent or care)*, *Surname (parent or carer)*, *Home Address*, *Workplace/school physical address*, *Country of Residence*, *Facility contact number*|
+| **Stage 1: Clinical Examination and Exposures** | This stage records a suspected case’s clinical symptoms and exposures including: *Symptoms*, *Pregnancy and underlying conditions*, *Hospitalisation and Isolation*, *Exposures in 14 days prior to symptoms*, *Travel history*, *Contact with confirmed case*. After examination, you can record if the case has been hospitalised or isolated, and information surrounding this. |
+| **Stage 2: Lab Request [repeatable]** | The lab request records the reason for testing and other information that a lab needs to process a sample and test it for COVID19. The information provided here can help lab personnel prioritize lab tests when resources are limited. The person entering this data could be the same person who registered the suspected case and recorded the patient’s clinical exam and exposures; or may be other personnel charged with making lab requests. |
+| **Stage 3: Lab Results [repeatable]** | The Lab Results stage records the type and results from laboratory testing. It can be done directly at the lab or as secondary data entry. This stage is repeatable as samples for a given case may be tested multiple times (i.e. in the case of an inconclusive laboratory results, a new lab test can be conducted and results recorded). |
+| **Stage 4: Health Outcome** | The health outcome records the final outcome of the case: (recovered, not recovered, dead or unknown) including date of discharge or death as applicable. |
 
 #### Enrollment
 
@@ -228,101 +172,30 @@ You can read more about program rules here: [https://docs.dhis2.org/master/en/us
 
 From the data captured in the COVID-19 case surveillance program, we can calculate at least the following indicators including those recommended by the WHO for daily and weekly aggregate reporting and present them in a dashboard:
 
-<table>
- <tbody>
-  <tr class="odd">
-   <td>COVID-19 - Cases treated with mechanical ventilation or ECMO or admitted in intensive care unit (ICU)</td>
-   <td>Cases treated with mechanical ventilation or ECMO or admitted in intensive care unit (ICU)</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 Contacts</td>
-   <td>Counts the number of relationships (‘has been in contact with’) created that are linked to the case TEI</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Deaths (all suspected cases)</td>
-   <td>COVID-19 related deaths (deaths recorded among all suspected cases)</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Deaths (confirmed cases)</td>
-   <td>COVID-19 related deaths (deaths recorded among confirmed cases)</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Deaths (probable cases)</td>
-   <td>COVID-19 related deaths (deaths recorded among all probable cases)</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Confirmed Hospitalised Cases</td>
-   <td>Number of confirmed cases that were admitted into hospital</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Imported Cases</td>
-   <td>Cases where likely source of infection is recorded as another country or imported from another country.</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Laboratory confirmed cases</td>
-   <td>Suspected cases that were confirmed through laboratory testing (multiple lab tests may be conducted; this indicator assumes that the last test result is "Positive"); displayed by report date</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Laboratory confirmed cases - by onset of symptoms</td>
-   <td>Suspected cases that were confirmed through laboratory testing (multiple lab tests may be conducted; this indicator assumes that the last test result is "Positive"); displayed by date of onset of symptoms</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Laboratory tested cases</td>
-   <td>Number of suspected cases that received a laboratory test (includes inconclusive lab testing results)</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Local transmission cases</td>
-   <td>Number of suspected cases where transmission is local (no travel in last 14 days</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Probable cases</td>
-   <td>Suspected cases with inconclusive laboratory results or not tested for any reason, by reported date</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Probable cases - by onset of symptoms</td>
-   <td>Suspected cases with inconclusive laboratory results or not tested for any reason, by date of onset of symptoms</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Recovered confirmed cases</td>
-   <td>Number of laboratory confirmed cases with outcome recovered</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Suspected cases</td>
-   <td>Total number of cases suspected with COVID-19, by report date</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 - Suspected cases - by onset of symptoms</td>
-   <td>Total number of cases suspected with COVID-19, by date of onset of symptoms</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 - Suspected cases without a positive test result</td>
-   <td>Total number of suspected cases without a positive lab result</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 Total number of laboratory tests conducted</td>
-   <td>Total number of lab tests conducted (count of tests, not cases)</td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 Total number of positive tests</td>
-   <td>Total number of lab tests returned with positive results (count of tests, not cases</td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 Deaths by sex and age group</td>
-   <td><p>Male, 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+</p>
-   <p>Female, 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+</p></td>
-  </tr>
-  <tr class="odd">
-   <td>COVID-19 Confirmed cases by sex and age group</td>
-   <td><p>Male, 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+</p>
-   <p>Female, 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+</p></td>
-  </tr>
-  <tr class="even">
-   <td>COVID-19 Suspected cases by sex and age group</td>
-   <td><p>Male, 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+</p>
-   <p>Female, 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+</p></td>
-  </tr>
- </tbody>
-</table>
+| Indicator name | Description |
+|---|---|
+| COVID-19 - Cases treated with mechanical ventilation or ECMO or admitted in intensive care unit (ICU) | *Cases treated with mechanical ventilation or ECMO or admitted in intensive care unit (ICU)* |
+| COVID-19 Contacts | *Counts the number of relationships (‘has been in contact with’) created that are linked to the case TEI* |
+| COVID-19 - Deaths (all suspected cases) | *COVID-19 related deaths (deaths recorded among all suspected cases)* |
+| COVID-19 - Deaths (confirmed cases) | *COVID-19 related deaths (deaths recorded among confirmed cases)* |
+| COVID-19 - Deaths (probable cases) | *COVID-19 related deaths (deaths recorded among all probable cases)* |
+| COVID-19 - Confirmed Hospitalised Cases | *Number of confirmed cases that were admitted into hospital* |
+| COVID-19 - Imported Cases | *Cases where likely source of infection is recorded as another country or imported from another country.* |
+| COVID-19 - Laboratory confirmed cases | *Suspected cases that were confirmed through laboratory testing (multiple lab tests may be conducted; this indicator assumes that the last test result is* "Positive"*); displayed by report date* |
+| COVID-19 - Laboratory confirmed cases - by onset of symptoms | *Suspected cases that were confirmed through laboratory testing (multiple lab tests may be conducted; this indicator assumes that the last test result is* "Positive"*); displayed by date of onset of symptoms* |
+| COVID-19 - Laboratory tested cases | *Number of suspected cases that received a laboratory test (includes inconclusive lab testing results)* |
+| COVID-19 - Local transmission cases | *Number of suspected cases where transmission is local (no travel in last 14 days* |
+| COVID-19 - Probable cases | *Suspected cases with inconclusive laboratory results or not tested for any reason, by reported date* |
+| COVID-19 - Probable cases - by onset of symptoms | *Suspected cases with inconclusive laboratory results or not tested for any reason, by date of onset of symptoms* |
+| COVID-19 - Recovered confirmed cases | *Number of laboratory confirmed cases with outcome recovered*|
+| COVID-19 - Suspected cases | *Total number of cases suspected with COVID-19, by report date* |
+| COVID-19 - Suspected cases - by onset of symptoms | *Total number of cases suspected with COVID-19, by date of onset of symptoms* |
+| COVID-19 - Suspected cases without a positive test result | *Total number of suspected cases without a positive lab result* |
+| COVID-19 Total number of laboratory tests conducted | *Total number of lab tests conducted (count of tests, not cases)* |
+| COVID-19 Total number of positive tests | *Total number of lab tests returned with positive results (count of tests, not cases* |
+| COVID-19 Deaths by sex and age group | ***Male**: 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+ &#124; **Female**: 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+* |
+| COVID-19 Confirmed cases by sex and age group | ***Male**: 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+ &#124; **Female**: 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+* |
+| COVID-19 Suspected cases by sex and age group | ***Male**: 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+ &#124; **Female**: 0-4, 5-14, 15-24, 25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+* |
 
 ## Use Case 2: COVID-19 Contact registration & follow-up
 
@@ -336,54 +209,11 @@ The Contact registration & follow-up program registers each contact of a case (a
 
 ### Program Description: Contact registration & follow-up
 
-<table>
- <thead>
-  <tr class="header">
-   <th>Stage</th>
-   <th>Description</th>
-  </tr>
- </thead>
- <tbody>
-  <tr class="odd">
-   <td><p><strong>Enrollment details</strong></p>
-   <p><strong>Attributes</strong></p></td>
-   <td><p>The Tracked Entity is represented by a Tracked Entity Type of ‘person.’</p>
-   <p>Related programs: COVID-19 Case based surveillance</p>
-   <p>Attributes include basic personal information and unique case identifiers</p>
-   <ul>
-    <li>System Generated Case ID</li>
-    <li>Local Case ID</li>
-    <li>First Name</li>
-    <li>Surname</li>
-    <li>Date of birth</li>
-    <li>Age</li>
-    <li>Sex</li>
-    <li>Phone number (local)</li>
-    <li>Home Address</li>
-    <li>Country of Residence</li>
-   </ul></td>
-  </tr>
-  <tr class="even">
-   <td><p><strong>Stage 1:</strong></p>
-   <p><strong>Follow-Up</strong></p>
-   <p><strong>[non-repeatable]</strong></p></td>
-   <td><p>This stage is meant to record information related to contact tracing follow up, given that a contact has already been identified. It is divided into two sections:</p>
-   <ol type="1">
-    <li>Relation with case</li>
-    <li>Exposure Assessment</li>
-   </ol></td>
-  </tr>
-  <tr class="odd">
-   <td><p><strong>Stage 2:</strong></p>
-   <p><strong>Symptoms</strong></p>
-   <p><strong>[repeatable]</strong></p></td>
-   <td><p>This stage is intended to record symptoms of the case. Follow-up to check on the symptoms of a contact can be repeated until the follow-up period is complete (for example, after 14 days or according to national guidelines). When follow-up period is complete, the enrollment can be ‘completed.’</p>
-   <ol type="1">
-    <li>Symptoms</li>
-   </ol></td>
-  </tr>
- </tbody>
-</table>
+| Stage | Description |
+|---|---|
+| **Enrollment details &amp; Attributes** | The Tracked Entity is represented by a Tracked Entity Type of ‘person.’ The Related program is *COVID-19 Case based surveillance*. The attributes include the following basic personal information and unique case identifiers: *System Generated Case ID*, *Local Case ID*, *First Name*, *Surname*, *Date of birth*, *Age*, *Sex*, *Phone number (local)*, *Home Address*, *Country of Residence* |
+| **Stage 1: Follow-Up [non-repeatable]** | This stage is meant to record information related to contact tracing follow up, given that a contact has already been identified. It is divided into two sections: *1. Relation with case*, *2. Exposure Assessment* |
+| **Stage 2: Symptoms[repeatable]** | This stage is intended to record symptoms of the case. Follow-up to check on the symptoms of a contact can be repeated until the follow-up period is complete (for example, after 14 days or according to national guidelines). When follow-up period is complete, the enrollment can be ‘completed.’ *1. Symptoms*|
 
 Contacts are added to the index case using the relationships menu in the case surveillance program:
 
