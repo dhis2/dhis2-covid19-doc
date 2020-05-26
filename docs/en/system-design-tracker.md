@@ -1,11 +1,9 @@
 # COVID-19 Case-based Surveillance & Contact Tracing Tracker System Design v0.3.3
 
-<ul style="text-align: right">
-  <li style="list-style: none">Last updated 27/03/2020</li>
-  <li style="list-style: none">Package version: 0.3.3</li>
-  <li style="list-style: none">DHIS2 Version compatibility 2.33.2</li>
-  <li style="list-style: none">Demo: <a href="https://covid.dhis2.org/">https://covid.dhis2.org/</a></li>
-</ul>
+* Last updated 27/03/2020  
+* Package version: 0.3.3
+* DHIS2 Version compatibility 2.33.2  
+* Demo: [https://covid.dhis2.org][1]
 
 ## Purpose
 
