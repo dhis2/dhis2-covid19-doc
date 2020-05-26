@@ -19,6 +19,8 @@ nav:
         - 'Installation Guide Tracker': 'en/installation-guide-tracker.md'
         - 'Installation Guide Events': 'en/installation-guide-event.md'
         - 'Installation Guide Aggregate': 'en/installation-guide-aggregate.md'
+      - 'System Design Documents':
+        - 'Tracker System Design': en/system-design-tracker.md
     - Français:
       - 'Notes':
         - 'Notes de version': 'fr/release-notes-v03.md'
