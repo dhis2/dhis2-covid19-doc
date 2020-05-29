@@ -53,7 +53,7 @@ Benefits for Using tracker with stock management
 
 ## Structure: COVID-19 Commodities
 
-![COVID-19 Commodities Structure](resources/images/sdd-commodities-structure.png){ .center width=50% }
+![COVID-19 Commodities Structure](resources/images/sdd-commodities-structure.png)
 
 ### Program Description: COVID-19 Commodities
 
@@ -67,7 +67,7 @@ Benefits for Using tracker with stock management
 
 In this design, only one TEI needs to be enrolled into the program and can be re-used throughout. The TEI should be registered as the main point of contact for facility commodities with contact details such as telephone number. Additional attributes can be added for country customization as needed or may include primary and secondary contact details in the same registration.
 
-![Covid-19 Commodities Enrollment](resources/images/sdd-tracker-v3-case1-enrollment.png){ .center width=50% }
+![Covid-19 Commodities Enrollment](resources/images/sdd-tracker-v3-case1-enrollment.png)
 
 ### Program Stage: Daily Supply Report
 
@@ -97,7 +97,7 @@ The commodity types currently included in the package are:
 
 ***These commodities are based on a standard emergency commodities list provided by ICRC; data elements should be re-named, added and deleted according to commodity types used within the country.***
 
-![COVID-19 Commodities Data Entry](resources/images/sdd-commodities-stage1-entry.png){ .center width=50% }
+![COVID-19 Commodities Data Entry](resources/images/sdd-commodities-stage1-entry.png)
 
 ## Program Rules
 
