@@ -67,7 +67,7 @@ Benefits for Using tracker with stock management
 
 In this design, only one TEI needs to be enrolled into the program and can be re-used throughout. The TEI should be registered as the main point of contact for facility commodities with contact details such as telephone number. Additional attributes can be added for country customization as needed or may include primary and secondary contact details in the same registration.
 
-![Covid-19 Commodities Enrollment](resources/images/sdd-tracker-v3-case1-enrollment.png)
+![Covid-19 Commodities Enrollment](resources/images/sdd-commodities-enrollment.png)
 
 ### Program Stage: Daily Supply Report
 
