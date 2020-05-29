@@ -1,20 +1,3 @@
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
-
-WARNING:
-You have 4 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 1; WARNINGs: 2; ALERTS: 4.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
 # **COVID-19 Commodities Tracker System Design v0.3.3**
 
 * Last updated 27/03/2020
@@ -29,13 +12,13 @@ You have 4 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 
 The COVID-19 Commodities System Design document provides an overview of the conceptual design used to configure a tracker program and key indicators for tracking commodities related to COVID-19. This document is intended for use by DHIS2 implementers at country and regional level to be able to support implementation and localisation of the package. The COVID-19 metadata package can be adapted to local needs and national guidelines. In particular, local work flows and national guidelines should be considered in the localization and adoption of the programs included in this package.
 
-# Background
+## Background
 
 The COVID-19 digital data package was developed in response to an expressed need from countries to rapidly adapt a solution for managing COVID-19 data. Monitoring commodities such as personal protective equipment and testing supplies at the lowest levels of the health system is critical. DHIS2 is not meant to replace existing functional logistics management information systems (LMIS). However, in some country contexts DHIS2 is used at the facility level and is capable of capturing basic commodities data that can be analyzed alongside case surveillance and service delivery data to improve response.
 
 **The commodities tracker is designed based on the [WHO guidelines on rational use of Personal Protective Equipment for COVID-19 (19 March 2020)](https://www.who.int/publications-detail/rational-use-of-personal-protective-equipment-for-coronavirus-disease-(covid-19)-and-considerations-during-severe-shortages).** The design also draws on existing use cases where countries DHIS2 for capturing key stock data for commodities and medical equipment at the facility level. Note that this design may not necessarily reflect the latest available interim global guidance developed by WHO as updates may be released rapidly. National guidelines and policies may vary and it is recommended to adapt this package to local context. 
 
-# System Design Summary
+## System Design Summary
 
 Digital data packages are optimized for Android data collection with the DHIS2 Capture App, free to download on the [Google Play store](https://play.google.com/store/apps/details?id=com.dhis2&hl=en).
 
@@ -56,8 +39,8 @@ Benefits for Using tracker with stock management
 
 ## Intended users
 
-* Health facility users: capture and record stock counts (# of commodities on-hand, consumed, re-supplied); make requests for commodity re-supply as needed 
-* District health departments and district warehouses: monitor stock levels across facilities to distribute key commodities effectively 
+* Health facility users: capture and record stock counts (# of commodities on-hand, consumed, re-supplied); make requests for commodity re-supply as needed
+* District health departments and district warehouses: monitor stock levels across facilities to distribute key commodities effectively
 * National and local emergency response planners: analyze commodity data alongside surveillance data to develop resource mobilization and distribution plans for key commodities needed for COVID-19 response
 
 ## Workflow: COVID-19 Commodities
@@ -70,10 +53,7 @@ Benefits for Using tracker with stock management
 
 ## Structure: COVID-19 Commodities 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
+![COVID-19 Commodities Structure](resources/images/sdd-commodities-structure.png)
 
 ### Program Description: COVID-19 Commodities
 
@@ -87,11 +67,7 @@ Benefits for Using tracker with stock management
 
 In this design, only one TEI needs to be enrolled into the program and can be re-used throughout. The TEI should be registered as the main point of contact for facility commodities with contact details such as telephone number. Additional attributes can be added for country customization as needed or may include primary and secondary contact details in the same registration.
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/19-Commodities0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/19-Commodities0.png "image_tooltip")
+![Covid-19 Commodities Enrollment](resources/images/sdd-tracker-v3-case1-enrollment.png){ .center width=50% }
 
 ### Program Stage: Daily Supply Report
 
@@ -119,210 +95,45 @@ The commodity types currently included in the package are:
 * SOLUTION for hand disinfectionwithout water,& pump 500ml 
 * THERMOMETER, Ear Thermometer,electronic
 
-**_These commodities are based on a standard emergency commodities list provided by ICRC; data elements should be re-named, added and deleted according to commodity types used within the country. _**
+***These commodities are based on a standard emergency commodities list provided by ICRC; data elements should be re-named, added and deleted according to commodity types used within the country.***
 
+![COVID-19 Commodities Data Entry](resources/images/sdd-commodities-stage1-entry.png){ .center width=50% }
 
+## Program Rules
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/19-Commodities1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/19-Commodities1.png "image_tooltip")
-
-
-
-## Program Rules: COVID19 
-
-The following program rules have been configured. 
-
-
-<table>
-  <tr>
-   <td>Program Rule Name
-   </td>
-   <td>Program Rule Description
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
-
-
-
-## 
-
+The following program rules have been configured.
 
 ## Program Indicators
 
 From the data elements captured in the Daily Supply Report, the following indicators are calculated for stock monitoring
 
-**Key Logistics Indicator Definitions**
+### Key Logistics Indicator Definitions
 
 
-<table>
-  <tr>
-   <td>Name
-   </td>
-   <td>Description
-   </td>
-   <td>Config Status
-   </td>
-  </tr>
-  <tr>
-   <td>Stock Received
-   </td>
-   <td>Stocks received from a resupply or stock transfer
-<p>
-*the same as the DE
-   </td>
-   <td>Anything needed?
-   </td>
-  </tr>
-  <tr>
-   <td>Stock consumption
-   </td>
-   <td>The same as the DE
-   </td>
-   <td>Anything needed?
-   </td>
-  </tr>
-  <tr>
-   <td><del>Stock wasted</del>
-   </td>
-   <td><del>??? I don’t think we get this in this config</del>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td><del>Opening balance</del>
-   </td>
-   <td><del>Opening balance for day or shift</del>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td><del>Closing balance</del>
-   </td>
-   <td><del>Closing balance for end of the shift</del>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Stock on hand
-   </td>
-   <td>Same as DE Stock on hand
-   </td>
-   <td>Anything needed?
-   </td>
-  </tr>
-  <tr>
-   <td>Stock out Days
-   </td>
-   <td>The number of days stocked out of any commodity. <em>This assumes daily reporting. </em>
-<p>
-<em>Number of stockouts [by commodity, by facility] in a given range of time</em>
-<p>
-If zero is entered for this DE, record a ‘1’ for stockout. 
-<p>
-COUNTIF value = 0
-   </td>
-   <td><a href="https://covid19.dhis2.org/dev/dhis-web-maintenance/#/edit/indicatorSection/programIndicator/bAqvi5x53IB">Masks done, needs testing</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Drug availability rate
-   </td>
-   <td>Facilities with stock/All facilities 
-<p>
-Numerator: Facilities with X commodity in Stock >= 0
-<p>
-Denominator: All Facilities reported anything (if value = true)
-   </td>
-   <td>Masks <a href="https://covid19.dhis2.org/dev/dhis-web-maintenance/#/edit/indicatorSection/indicator/yygh5pqoE9V">Done</a>, needs testing
-   </td>
-  </tr>
-  <tr>
-   <td>Stock status - overstock
-   </td>
-   <td>Stock on hand for a given commodity is greater than 45 day average consumption.+25% 
-<p>
-Event period boundaries? 
-<p>
-Returns a binary 1/0
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Stock status - adequate
-   </td>
-   <td>Stock on hand for a given commodity is less than 45 day average consumption +25% and greater than 30 day average consumption - 25%
-<p>
-Returns a binary 1/0
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Stock status - understock
-   </td>
-   <td>Stock on hand is less than 30 day average consumption. -25%
-<p>
-Returns a binary 1/0 
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Stock status - stock out
-   </td>
-   <td>DE ‘stock on hand’ has zero value (latest reported stock on hand = 0). Only analyze at facility level.
-   </td>
-   <td>Masks Done, needs testing
-   </td>
-  </tr>
-  <tr>
-   <td>Average consumption 
-   </td>
-   <td>The three month daily average of commodity consumption which also factors in periods of stockout (Average of DE ‘consumption’ filter value !=0?)
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
+|Name|Description|Config Status|
+|--- |--- |--- |
+|Stock Received|Stocks received from a resupply or stock transfer *the same as the DE|Anything needed?|
+|Stock consumption|The same as the DE|Anything needed?|
+|Stock wasted|??? I don’t think we get this in this config||
+|Opening balance|Opening balance for day or shift||
+|Closing balance|Closing balance for end of the shift||
+|Stock on hand|Same as DE Stock on hand|Anything needed?|
+|Stock out Days|The number of days stocked out of any commodity. This assumes daily reporting. Number of stockouts [by commodity, by facility] in a given range of time If zero is entered for this DE, record a ‘1’ for stockout. COUNTIF value = 0|Masks done, needs testing
+|Drug availability rate|Facilities with stock/All facilities Numerator: Facilities with X commodity in Stock >= 0 Denominator: All Facilities reported anything (if value = true)|Masks Done, needs testing|
+|Stock status - overstock|Stock on hand for a given commodity is greater than 45 day average consumption.+25%Event period boundaries? Returns a binary 1/0|
+Stock status - adequate|Stock on hand for a given commodity is less than 45 day average consumption +25% and greater than 30 day average consumption - 25% Returns a binary 1/0|
+Stock status - understock|Stock on hand is less than 30 day average consumption. -25% Returns a binary 1/0|
+|Stock status - stock out|DE ‘stock on hand’ has zero value (latest reported stock on hand = 0). Only analyze at facility level.|Masks Done, needs testing|
+|Average consumption|The three month daily average of commodity consumption which also factors in periods of stockout (Average of DE ‘consumption’ filter value !=0?)|
 
+**Add some PIs for the stocks ‘needed’?**
 
-**Add some PIs for the stocks ‘needed’?
+## Analytic Outputs
 
-Analytic Outputs
+* Line listing current stock-outs and total number of stock-outs over time- At any given time users must be able to line list and view on a map any current stockouts and monitor the number of stockouts over time. 
+* Line listing can include the contact details of the facility contact/stock management focal point since these are captured as TEI attributes
 
+## References
 
-
-*   **Line listing current stock-outs and total number of stock-outs over time **- At any given time users must be able to line list and view on a map any current stockouts and monitor the number of stockouts over time. 
-*   Line listing can include the contact details of the facility contact/stock management focal point since these are captured as TEI attributes
-
-
-# References
-
-
-
-*   Installation guidance: [https://www.dhis2.org/covid-19](https://www.dhis2.org/covid-19)
-*   [WHO guidelines on rational use of Personal Protective Equipment for COVID-19 (19 March 2020)](https://www.who.int/publications-detail/rational-use-of-personal-protective-equipment-for-coronavirus-disease-(covid-19)-and-considerations-during-severe-shor
+* Installation guidance: [https://www.dhis2.org/covid-19](https://www.dhis2.org/covid-19)
+* [WHO guidelines on rational use of Personal Protective Equipment for COVID-19](https://www.who.int/publications-detail/rational-use-of-personal-protective-equipment-for-coronavirus-disease-(covid-19)-and-considerations-during-severe-shortages)
