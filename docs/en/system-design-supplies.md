@@ -51,9 +51,9 @@ Benefits for Using tracker with stock management
 3. District-level staff responsible for medical commodities distribution contacts the Facility and schedules delivery of re-supply
 4. Re-supplied commodities recorded in the DHIS2 Commodities module
 
-## Structure: COVID-19 Commodities 
+## Structure: COVID-19 Commodities
 
-![COVID-19 Commodities Structure](resources/images/sdd-commodities-structure.png)
+![COVID-19 Commodities Structure](resources/images/sdd-commodities-structure.png){ .center width=50% }
 
 ### Program Description: COVID-19 Commodities
 
