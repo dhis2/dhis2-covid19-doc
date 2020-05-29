@@ -191,51 +191,35 @@ The following lists the data elements and disaggregation (category combinations)
 
 Data should be entered for new cases reported during the reporting period. Confirmed cases refer to laboratory confirmed cases per WHO guidance; probable cases are defined by WHO as cases where laboratory test result is inconclusive; however countries may apply their own case definitions. The total column is automatically summed during data entry.
 
-
 ## 
 
 ![alt_text](resources/images/image1.png "image_tooltip")
-
 
 **Section 2: Cases tested and hospitalized **
 
 This section captures the number of cases that received a laboratory test or were admitted into the hospital.
 
-
-
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/19-Aggregate1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/19-Aggregate1.png "image_tooltip")
-
 
 **Section 3: Cases treated by treatment type**
 
 While many cases are not treated in the hospital, WHO recommends to capture data for patients -- usually those with severe symptoms --  who are treated with mechanical ventilation, Extracorporeal membrane oxygenation (ECMO), or admitted into intensive care unit (ICU). 
 
-
-
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/19-Aggregate2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/19-Aggregate2.png "image_tooltip")
-
 
 **Section 4: Transmission classification**
 
 This section summarizes cases by suspected type of transmission. 
 
-
-
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/19-Aggregate3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/19-Aggregate3.png "image_tooltip")
 
-
-
 ### Weekly Transmission Classification Data Elements 
-
 
 <table>
   <tr>
