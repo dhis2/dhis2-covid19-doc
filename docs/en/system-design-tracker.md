@@ -3,7 +3,7 @@
 * Last updated 27/03/2020  
 * Package version: 0.3.3
 * DHIS2 Version compatibility 2.33.2  
-* Demo: [https://covid.dhis2.org][1]
+* Demo: [https://covid19.dhis2.org][1]
 
 ## Purpose
 
@@ -263,7 +263,7 @@ You may also enroll them separately into the program. Once enrolled, you will be
 * WHO Considerations in the investigation of cases and clusters of COVID-19 (last updated 13 March 2020) [https://www.who.int/internal-publications-detail/considerations-in-the-investigation-of-cases-and-clusters-of-covid-19](https://www.who.int/internal-publications-detail/considerations-in-the-investigation-of-cases-and-clusters-of-covid-19)
 * WHO Coronavirus situation reports [https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports)
 
-[1]: https://covid.dhis2.org/
+[1]: https://covid19.dhis2.org/
 [2]: https://apps.who.int/iris/bitstream/handle/10665/331506/WHO-2019-nCoV-SurveillanceGuidance-2020.6-eng.pdf
 [3]: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/surveillance-and-case-definitions
 [4]: https://www.who.int/docs/default-source/coronaviruse/2020-02-27-data-dictionary-en.xlsx
