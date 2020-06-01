@@ -20,3 +20,5 @@ applicable_txt: 'Applicable to versions 2.33 to 2.34'
 !INCLUDE "installation-guide-tracker.md"
 !INCLUDE "installation-guide-event.md"
 !INCLUDE "installation-guide-aggregate.md"
+
+!INCLUDE "system-design-tracker.md"
