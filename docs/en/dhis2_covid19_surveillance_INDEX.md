@@ -1,5 +1,5 @@
 ---
-title: 'DHIS 2 COVID19 Surveillance'
+title: 'COVID-19 Surveillance'
 author: 'DHIS2 Metadata Package Team'
 date:
 year: 2020
